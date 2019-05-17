@@ -1,33 +1,42 @@
-.App {
-  text-align: center;
+* {
+    font-family: PingFangSC-Regular, sans-serif;
+    padding: 0;
+    margin: 0;
+    
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+  box-sizing: border-box;
+  font-size: 100%; 
+}
+  /* @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; }  
+}*/
+
+
+
+
+
+p {
+    font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-size: 36px;
+    letter-spacing: 0.9px;
+    color: #404040;
+    font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+    list-style-type: none;
 }
+
+
