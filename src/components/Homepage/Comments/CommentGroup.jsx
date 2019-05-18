@@ -9,7 +9,12 @@ const styles = {
         justifyContent: 'space-around',
         position: 'absolute',
         top: 0,
-        left: 0
+        left: 0,
+    },
+    '@media screen and (max-width: 900px)': {
+        root: {
+            flexDirection: 'column'
+        },
     }
 };
 

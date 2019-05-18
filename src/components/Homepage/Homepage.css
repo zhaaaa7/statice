@@ -10,8 +10,9 @@
 
 .homepage > div > section ,
 .homepage > footer > section{
-  width: 64rem;
-  margin: 30px auto;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .example-enter {

@@ -5,6 +5,15 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 const styles = {
+    container: {
+        backgroundColor: '#f8fafc',
+        height: '700px'
+    },
+    root: {
+        position: 'relative',
+        height: '430px',
+        overflow: 'hidden'
+    },
     slideShowControl: {
         width: '100%',
         display: 'flex',
@@ -18,6 +27,15 @@ const styles = {
             backgroundColor: 'rgba(107, 120, 132, 0.3)'
         }
 
+    },
+    '@media screen and (max-width: 900px)': {
+        container: {
+            height: '1570px',
+
+        },
+        root: {
+            height: '1300px',
+        },
     }
 };
 
@@ -101,18 +119,18 @@ const Comments = (props) => {
 
 
     useEffect(() => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            setCount((count + 1) % 3);
-        }, 3000);
-        // console.log('hhh', count);
+        // clearTimeout(timer);
+        // timer = setTimeout(() => {
+        //     setCount((count + 1) % 3);
+        // }, 3000);
+        console.log('hhh', count);
     });
 
 
     return (
-        <div style={{ backgroundColor: '#f8fafc', height: '700px' }}>
+        <div className={classes.container}>
             <h2>学员感言</h2>
-            <section style={{ position: 'relative', height: '430px', overflow: 'hidden' }}>
+            <section className={classes.root}>
                 <ReactCSSTransitionGroup
 
                     transitionName="example"

@@ -1,11 +1,28 @@
 import React from 'react';
 import TeacherCard from './TeacherCard';
+import { withStyles } from '@material-ui/core/styles';
 
-const Teachers = () => {
+
+const styles = {
+    root: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        marginTop: '60px',
+    },
+    '@media screen and (max-width: 900px)': {
+        root: {
+            flexDirection: 'column'
+        },
+    }
+};
+
+const Teachers = (props) => {
+    const { classes } = props;
+
     return (
         <div>
             <h2>顶级师资</h2>
-            <section style={{ display: 'flex', justifyContent: 'space-around', marginTop: '60px' }}>
+            <section className={classes.root}>
                 <TeacherCard name={'​金一粟'}
                     title={'CEO @ IntelliPro'}
                     des={'FLAGDream Co-Founder，首席职业发展和就业咨询师。现任美国华人最大人才生态圈IntelliPro Group创始人兼CEO。曾先后在Oracle, IBM, Cisco等公司从事技术开发、咨询、项目管理等工作。多年来，为Google、Apple、Amazon、Samsung、LinkedIn, Airbnb、阿里巴巴、腾讯、百度、京东、头条、滴滴等知名中美企业输送数千人才。'}
@@ -25,4 +42,4 @@ const Teachers = () => {
     );
 };
 
-export default Teachers;
+export default withStyles(styles)(Teachers);

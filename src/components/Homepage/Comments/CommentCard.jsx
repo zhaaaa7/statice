@@ -9,7 +9,8 @@ const styles = {
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
         position: 'relative',
-        padding: '30px 10px 0'
+        padding: '30px 10px 0',
+        margin: '20px auto'
     },
     quote: {
         height: '20px',

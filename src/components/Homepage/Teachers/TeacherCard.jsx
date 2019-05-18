@@ -9,7 +9,8 @@ const styles = {
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
         position: 'relative',
-        padding: '0 30px'
+        padding: '0 30px',
+        margin: '0 auto 60px',
     },
     avatar: {
         width: '95px',

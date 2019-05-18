@@ -9,6 +9,8 @@ const styles = {
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
+        margin: '0 auto 60px',
+
     },
     decoration: {
         width: '260px',
