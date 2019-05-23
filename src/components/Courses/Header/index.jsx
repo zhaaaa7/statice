@@ -4,7 +4,7 @@ import Content from './Content';
 import AdsData from './AdsData';
 const header = () => {
     return (
-        <header style={{ height: '571px', position: 'relative', marginTop: '90px' }}>
+        <header style={{ height: '375px', position: 'relative', marginTop: '90px' }}>
             <Carousel />
             <Content />
             <AdsData />

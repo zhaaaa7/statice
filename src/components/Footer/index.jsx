@@ -6,7 +6,7 @@ import CopyRight from './CopyRight';
 const Footer = () => {
     return (
         <footer style={{ width: '100%' }}>
-            <section style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <section style={{ display: 'flex', justifyContent: 'space-around', padding: '20px 0' }}>
                 <FooterColumn
                     title={'旗舰课程'}
                     content={['程序员算法面试课', '程序员项目实战课​', '数据科学求职实战课']}>

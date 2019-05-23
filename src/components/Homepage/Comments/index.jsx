@@ -18,7 +18,7 @@ const styles = {
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
-        marginTop: '-20px',
+        marginTop: '20px',
         '& div': {
             width: '12px',
             height: '12px',
@@ -111,26 +111,36 @@ const comments = [
     ],
 ];
 
-let timer;
+// let timer;
 const Comments = (props) => {
     const { classes } = props;
 
     const [count, setCount] = useState(0);
+    const [transition, toggleTransition] = useState(true);
 
 
     useEffect(() => {
         // clearTimeout(timer);
-        // timer = setTimeout(() => {
-        //     setCount((count + 1) % 3);
-        // }, 3000);
-        console.log('hhh', count);
+        let timer;
+        if (transition) {
+            timer = setTimeout(() => {
+                setCount((count + 1) % 3);
+            }, 3000);
+            console.log('hhh', count);
+        }
+
+
+        return () => { clearTimeout(timer); };
     });
 
 
     return (
         <div className={classes.container}>
-            <h2>学员感言</h2>
-            <section className={classes.root}>
+            <h2 style={{ marginBottom: '30px' }}>学员感言</h2>
+            <section
+                className={classes.root}
+                onMouseEnter={() => { toggleTransition(false) }}
+                onMouseLeave={() => { toggleTransition(true) }}>
                 <ReactCSSTransitionGroup
 
                     transitionName="example"

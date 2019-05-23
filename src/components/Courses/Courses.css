@@ -1,0 +1,35 @@
+
+.courses > div {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.courses > div > section ,
+.courses > footer > section{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.courses  h2 {
+  font-size: 28px;
+  letter-spacing: 0.7px;
+  color: #404040;
+}
+/* 
+.flow {
+  animation-duration: 3s;
+  animation-name: feedbackFlow;
+
+}
+
+@keyframes feedbackFlow {
+  0% {
+      transform: translate3d(0,0,0)
+  }
+  50% { transform: translate3d(-1000px,0,0)}
+  100% {
+      transform: translate3d(0,0,0)
+  }
+
+} */

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MobileNav from './MobileNav';
 
-const styles = theme => ({
+const styles = {
     root: {
         width: '40%',
         maxWidth: '400px',
@@ -21,7 +21,7 @@ const styles = theme => ({
         }
     }
 
-});
+};
 function debounce(fn) {
     let timer;
     return () => {
@@ -44,12 +44,14 @@ const getDimensions = () => {
 const Nav = (props) => {
     const { classes } = props;
     const [windowSize, getWindowSize] = useState(getDimensions());
-    const resizeCallback = debounce(() => {
-        getWindowSize(getDimensions());
-    });
+
 
 
     useEffect(() => {
+        const resizeCallback = debounce(() => {
+            getWindowSize(getDimensions());
+        });
+
         window.addEventListener('resize', resizeCallback);
         return () => {
             window.removeEventListener('resize', resizeCallback);
