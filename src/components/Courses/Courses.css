@@ -1,14 +1,17 @@
-
+.courses {
+  position: relative;
+}
 .courses > div {
     padding: 60px 0;
+    
     text-align: center;
 }
 
-.courses > div > section ,
+.courses > div > div ,
 .courses > footer > section{
-  max-width: 1024px;
+  max-width: 760px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: 15%;
 }
 
 .courses  h2 {
@@ -16,20 +19,38 @@
   letter-spacing: 0.7px;
   color: #404040;
 }
-/* 
-.flow {
-  animation-duration: 3s;
-  animation-name: feedbackFlow;
+
+.syllabus-enter {
+  opacity:  0;
+}
+
+.syllabus-enter.syllabus-enter-active {
+  /* transform:  translate3d(0,0,0); */
+  opacity:  1;
+  transition: opacity 800ms ease-in .2s;
+}
+
+.syllabus-leave {
+  /* transform:  translate3d(0,0,0); */
+  opacity:  1;
+
 
 }
 
-@keyframes feedbackFlow {
-  0% {
-      transform: translate3d(0,0,0)
-  }
-  50% { transform: translate3d(-1000px,0,0)}
-  100% {
-      transform: translate3d(0,0,0)
-  }
+.syllabus-leave.syllabus-leave-active {
+  opacity:  0;
 
-} */
+  transition: opacity 800ms ease-out .1s;
+}
+
+@media screen and (max-width: 1300px) {
+  .courses > div > div {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .courses > div > div {
+    margin: 0 auto;
+  }
+}

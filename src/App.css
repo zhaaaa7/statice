@@ -21,20 +21,22 @@ html {
 }*/
 
 
+a {
+  text-decoration: none;
+  color:#404040;
+  font-size: 14px;
+}
 
+a.active {
+  color:#999
+}
 
 
 p {
     font-size: 14px;
 }
 
-h2 {
-    font-size: 36px;
-    letter-spacing: 0.9px;
-    color: #404040;
-    font-weight: 400;
-    margin-bottom: 60px;
-}
+
 
 li {
     list-style-type: none;

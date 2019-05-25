@@ -34,13 +34,13 @@ const Courses = (props) => {
             <section className={classes.root}>
                 <CourseCard title={'程序员算法面试课'}
                     des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/course 1.png'} />
+                    decImg={'./asset/homepage/course 1.png'} />
                 <CourseCard title={'程序员算法面试课'}
                     des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/course 2.png'} />
+                    decImg={'./asset/homepage/course 2.png'} />
                 <CourseCard title={'程序员算法面试课'}
                     des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/course 3.png'} />
+                    decImg={'./asset/homepage/course 3.png'} />
             </section>
             <button type="submit" className={classes.button}>点击咨询课程</button>
 

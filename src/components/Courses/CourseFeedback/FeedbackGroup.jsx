@@ -9,7 +9,7 @@ const styles = {
         position: 'absolute',
         top: '0',
         left: '0',
-        animation: '12s feedbackFlow linear infinite'
+        animation: '16s feedbackFlow linear infinite'
 
 
     },
@@ -22,11 +22,6 @@ const styles = {
             transform: 'translateX(-50%)'
         },
 
-    },
-    '@media screen and (max-width: 900px)': {
-        root: {
-            flexDirection: 'column'
-        },
     }
 };
 

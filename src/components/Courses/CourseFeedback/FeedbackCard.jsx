@@ -12,8 +12,6 @@ const styles = {
         padding: '20px 4px 0',
         margin: '20px',
         flex: 'none',
-        position: 'relative',
-
     },
 
     company: {

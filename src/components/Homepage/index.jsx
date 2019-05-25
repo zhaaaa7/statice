@@ -8,10 +8,11 @@ import Comments from './Comments/index';
 import Footer from '../Footer/index';
 import ContactUs from './ContactUs/index';
 
-function Homepage() {
+const Homepage = (props) => {
+    // console.log('homepage', props.windowWidth);
     return (
         <div className="homepage">
-            <Nav />
+            <Nav windowWidth={props.windowWidth} windowScroll={props.windowScroll} />
             <Header />
             <Courses />
             <Teachers />

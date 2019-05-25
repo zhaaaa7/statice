@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -50,10 +51,12 @@ const MobileNav = (props) => {
                         <CloseIcon />
                     </IconButton>
                     <ul className={classes.nav}>
-                        <li>旗舰课程</li>
-                        <li>免费资源</li>
-                        <li>关于我们</li>
-                        <li>登录</li>
+                        <NavLink to="/courses">旗舰课程</NavLink>
+                        <NavLink to="/a">免费资源</NavLink>
+
+                        <NavLink to="/s">关于我们</NavLink>
+
+                        <NavLink to="/d">登录</NavLink>
                     </ul>
                 </div>
             </Drawer>

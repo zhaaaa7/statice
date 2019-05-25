@@ -23,7 +23,7 @@ const FooterColumn = (props) => {
     const { classes } = props;
 
     return (
-        <ul style={{ width: '30%' }}>
+        <ul style={{ width: '50%' }}>
             <h5 className={classes.section}>{props.title}</h5>
             {props.content.map(ele => {
                 return <li className={classes.item} key={ele}>{ele}</li>

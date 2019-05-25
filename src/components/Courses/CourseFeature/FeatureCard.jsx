@@ -8,13 +8,19 @@ const styles = {
         height: '250px',
         boxShadow: '0 2px 7px 0 rgba(0, 0, 0, 0.4)',
         backgroundColor: '#fff',
-        margin: '0 auto 60px',
+        margin: '0 10px 60px',
 
     },
-    icon: {},
+    icon: {
+        width: '82px',
+        height: '82px',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        margin: '0 auto',
+    },
     title: {
-        padding: '0 20px',
-        fontWeight: '500',
+        padding: '0 10px',
+        fontWeight: '600',
         fontSize: '16px',
         color: '#404040',
 
@@ -35,7 +41,7 @@ const FeatureCard = (props) => {
     return (
         <div className={classes.root}>
             <section>
-                <div className={classes.icon}>ICON</div>
+                <div className={classes.icon} style={{ backgroundImage: props.icon }}></div>
                 <h5 className={classes.title}>{props.title}</h5>
                 <p className={classes.description}>{props.des}</p>
             </section>

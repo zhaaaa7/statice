@@ -18,6 +18,21 @@ const styles = {
         '& > div:last-child': {
             borderRightColor: 'transparent'
         }
+    },
+    '@media screen and (max-width: 700px)': {
+        adsData: {
+            width: '100%',
+            left: '0%'
+
+
+        }
+    },
+    '@media screen and (max-width: 550px)': {
+        adsData: {
+            display: 'none'
+
+
+        }
     }
 };
 

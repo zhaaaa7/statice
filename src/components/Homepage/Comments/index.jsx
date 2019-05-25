@@ -46,21 +46,21 @@ const comments = [
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/google.png'
+            decImg: './asset/homepage/google.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/google.png'
+            decImg: './asset/homepage/google.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/google.png'
+            decImg: './asset/homepage/google.png'
         }
     ],
     [
@@ -69,21 +69,21 @@ const comments = [
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Adobe.png'
+            decImg: './asset/homepage/Adobe.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Adobe.png'
+            decImg: './asset/homepage/Adobe.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Adobe.png'
+            decImg: './asset/homepage/Adobe.png'
         }
     ],
     [
@@ -92,21 +92,21 @@ const comments = [
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Huawei.png'
+            decImg: './asset/homepage/Huawei.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Huawei.png'
+            decImg: './asset/homepage/Huawei.png'
         },
         {
             content: "教育的门槛不低，但等到真正完成了课程，我觉得这是很值得的投资。FLAGDream教会了我很多东西，也拯救了求职时困难和迷茫的我。",
             name: '​Y. Wang',
             title: 'JAVA Developer',
             company: '@Google',
-            decImg: './asset/Huawei.png'
+            decImg: './asset/homepage/Huawei.png'
         }
     ],
 ];
@@ -126,7 +126,7 @@ const Comments = (props) => {
             timer = setTimeout(() => {
                 setCount((count + 1) % 3);
             }, 3000);
-            console.log('hhh', count);
+            // console.log('hhh', count);
         }
 
 

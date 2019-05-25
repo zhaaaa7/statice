@@ -2,7 +2,7 @@ import React from 'react';
 
 const CoontactInfo = () => {
     return (
-        <div style={{ width: '35%', color: '#fff' }}>
+        <div style={{ width: '400px', color: '#fff' }}>
             <h2 style={{
                 color: '#fff',
                 fontSize: '36px',
@@ -15,7 +15,9 @@ const CoontactInfo = () => {
             <div style={{
                 marginTop: '40px', textAlign: 'left',
             }}>
-                微信公众号
+                <p style={{ marginBottom: '20px' }}>微信公众号</p>
+                <img src="./asset/courses/qr.png" alt="qrcode" width="150px" />
+
 
             </div>
         </div>

@@ -1,14 +1,11 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import QuestionPanel from './QuestionPanel';
-
 
 const styles = {
     root: {
         display: 'flex',
-        // justifyContent: 'space-around',
-        marginTop: '60px',
-
+        width: '70%',
+        margin: '0 auto'
     },
     info: {
         width: '272px',
@@ -20,7 +17,10 @@ const styles = {
     promotion: {
         fontSize: '14px',
         color: '#fff',
-        textAlign: 'left'
+        textAlign: 'left',
+        lineHeight: '2',
+        fontWeight: '500',
+
     },
     oldnumber: {
         fontSize: '24px',
@@ -53,23 +53,31 @@ const styles = {
         backgroundColor: '#fff',
         fontSize: '14px',
         fontWeight: '600'
+    },
+    dec: {
+        width: '160px',
+        height: '160px',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url("./asset/courses/earlybird.png")`
     }
 };
-const Questions = (props) => {
+const Promotion = (props) => {
     const { classes } = props;
 
     return (
         <div style={{
             height: '215px',
             opacity: '0.95',
-            backgroundColor: '#1f74d4'
-        }}>
+            backgroundColor: '#1f74d4',
+            padding: '30px'
+        }} >
             <section className={classes.root}>
-                <div>
+                <div style={{ marginRight: '120px' }}>
                     <div className={classes.info}>
                         <div>
                             <p className={classes.promotion}>课程原价</p>
-                            <p className={classes.oldnumber}><span className={classes.dec}></span>3998 USD</p>
+                            <p className={classes.oldnumber}>3998 USD</p>
                         </div>
                         <div>
                             <p className={classes.promotion}>Early Bird折后价</p>
@@ -78,10 +86,13 @@ const Questions = (props) => {
                     </div>
                     <button type="submit" className={classes.button}>立即报名</button>
                 </div>
+                <div className={classes.dec}>
+
+                </div>
             </section>
 
         </div>
     );
 };
 
-export default withStyles(styles)(Questions);
+export default withStyles(styles)(Promotion);

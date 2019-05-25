@@ -8,8 +8,6 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-around',
         marginTop: '60px',
-        backgroundColor: '#fff',
-
     },
     '@media screen and (max-width: 900px)': {
         root: {
@@ -33,13 +31,14 @@ const Questions = (props) => {
     const { classes } = props;
 
     return (
-        <div style={{ backgroundColor: '#f8fafc' }}>
-            <h2 style={{ marginTop: '40px' }}>常见问题</h2>
-            <section className={classes.root}>
+        <div style={{ backgroundColor: '#f8fafc' }} className="roots">
+            <div>
+                <h2 style={{ marginTop: '40px' }}>常见问题</h2>
+                <section className={classes.root}>
 
-                <QuestionPanel />
-            </section>
-
+                    <QuestionPanel />
+                </section>
+            </div>
         </div>
     );
 };

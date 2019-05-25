@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { NavLink } from 'react-router-dom'
 import MobileNav from './MobileNav';
 
 const styles = {
@@ -22,56 +23,23 @@ const styles = {
     }
 
 };
-function debounce(fn) {
-    let timer;
-    return () => {
-        if (timer) { clearTimeout(timer); }
-        timer = setTimeout(() => { fn(); }, 100);
-    };
-}
 
-const getDimensions = () => {
-    const w = window;
-    const d = document;
-    const documentElement = d.documentElement;
-    const body = d.getElementsByTagName('body')[0];
-    const width = w.innerWidth || documentElement.clientWidth || body.clientWidth;
-    const height = w.innerHeight || documentElement.clientHeight || body.clientHeight;
-
-    return { width, height };
-};
 
 const Nav = (props) => {
-    const { classes } = props;
-    const [windowSize, getWindowSize] = useState(getDimensions());
-
-
-
-    useEffect(() => {
-        const resizeCallback = debounce(() => {
-            getWindowSize(getDimensions());
-        });
-
-        window.addEventListener('resize', resizeCallback);
-        return () => {
-            window.removeEventListener('resize', resizeCallback);
-        }
-    }, []);
-
-
-
-
+    const { windowWidth, classes } = props;
 
     return (
         <div className={classes.root}>
             {
-                windowSize.width > 700 ?
+                windowWidth > 700 ?
                     <ul className={classes.nav}>
-                        <li>旗舰课程</li>
-                        <li>免费资源</li>
-                        <li>关于我们</li>
-                        <li>登录</li>
-                        <li>{windowSize.width}</li>
+                        <NavLink to="/courses">旗舰课程</NavLink>
+                        <NavLink to="/a">免费资源</NavLink>
+
+                        <NavLink to="/s">关于我们</NavLink>
+
+                        <NavLink to="/d">登录</NavLink>
+                        <li>{windowWidth}</li>
                     </ul>
                     : <MobileNav />
             }

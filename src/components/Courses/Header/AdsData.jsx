@@ -1,5 +1,7 @@
 import React from 'react';
 import AdsDataItem from './AdsDataItem';
+import Star from './Star';
+
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
@@ -7,7 +9,7 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         width: '90%',
-        height: '142px',
+        height: '110px',
         position: 'absolute',
         top: '80%',
         left: '5%',
@@ -21,6 +23,23 @@ const styles = {
         justifyContent: 'space-around',
         borderRight: '1px solid #ececec',
 
+    },
+    score: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    '@media screen and (max-width: 710px)': {
+        adsData: {
+            display: 'none'
+
+        }
+    },
+    '@media screen and (max-width: 825px)': {
+        adsData: {
+            width: '100%',
+            left: '0%'
+
+        }
     }
 };
 
@@ -30,10 +49,11 @@ const AdsData = (props) => {
     return (
         <div className={classes.adsData}>
             <section className={classes.courseDes}>
-                <AdsDataItem des={'背景要求'} content={'无'} />
-                <AdsDataItem des={'课程长度'} content={'10周'} />
-                <AdsDataItem des={'开课时间'} content={'5月18日'} />
+                <AdsDataItem des={'背景要求'} content={'无'} icon={`url("./asset/courses/course.png")`} />
+                <AdsDataItem des={'课程长度'} content={'10周'} icon={`url("./asset/courses/time.png")`} />
+                <AdsDataItem des={'开课时间'} content={'5月18日'} icon={`url("./asset/courses/schedule.png")`} />
             </section>
+            <Star des={'学员课程评分'} content={'4.5分'} icon={`url("./asset/courses/thumb.png")`} />
         </div>
     );
 };

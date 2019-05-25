@@ -6,7 +6,7 @@ const carousel = () => {
             width: '100%',
             height: '100%',
 
-            backgroundImage: `url('./asset/hp_bg.png')`,
+            backgroundImage: `url('./asset/courses/course-bg.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center center'
         }}>

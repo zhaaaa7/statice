@@ -6,13 +6,14 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = {
     root: {
         position: 'relative',
-        width: '50%',
-        height: '452px',
+        width: '80%',
+        height: '470px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
         margin: '20px 20px 0 0',
-        maxWidth: '600px'
+        maxWidth: '600px',
+        minWidth: '270px'
     },
     header: {
         position: 'absolute',
@@ -52,7 +53,7 @@ const styles = {
     divider: {
         position: 'relative',
         color: '#999',
-        margin: '30px 0',
+        margin: '20px 0',
         '&::before': {
             content: '""',
             position: 'absolute',
@@ -72,6 +73,27 @@ const styles = {
             width: '35%',
             backgroundColor: '#dfdfdf'
         }
+    },
+    footer: {
+        textAlign: 'left',
+        width: '80%',
+        margin: '0 auto'
+    },
+    contact: {
+        display: 'flex',
+        justifyContent: 'space-between'
+    },
+    reminder: {
+        fontSize: '16px',
+        fontWeight: '600',
+        letterSpacing: '0.9px',
+        color: '#404040',
+        marginBottom: '10px'
+    },
+    '@media screen and (max-width: 500px)': {
+        contact: {
+            flexDirection: 'column'
+        },
     }
 };
 
@@ -102,8 +124,16 @@ const CoontactForm = (props) => {
                 <button type="submit" className={classes.submitButton}>提交</button>
             </form>
             <p className={classes.divider}>或</p>
-            <p>直接联系课程组Davy老师:</p>
-            <p>davy.z@flagdream.com</p>
+            <footer className={classes.footer}>
+                <p className={classes.reminder}>直接联系课程组Davy老师:</p>
+                <section className={classes.contact}>
+                    <p><img style={{ verticalAlign: 'middle', marginRight: '6px' }} alt="mailicon" src="./asset/courses/mail.png" width="24px" />davy.z@flagdream.com</p>
+                    <div>
+                        <img src="./asset/courses/wechat.png" alt="wechaticon" width="24px" style={{ verticalAlign: 'top', marginRight: '6px' }} />
+                        <img src="./asset/courses/qr.png" alt="qrcode" width="50px" />
+                    </div>
+                </section>
+            </footer>
 
         </div>
     );

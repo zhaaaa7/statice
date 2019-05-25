@@ -7,9 +7,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 const styles = {
     root: {
         width: '70%',
-        height: '400px',
-        backgroundColor: '#fff',
-        margin: '0 auto 60px',
+        margin: '0 auto',
 
     },
     content: {

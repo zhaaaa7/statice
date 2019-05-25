@@ -1,12 +1,28 @@
 import React from 'react';
 import FooterColumn from './FooterColumn';
 import CopyRight from './CopyRight';
+import { withStyles } from '@material-ui/core/styles';
 
 
-const Footer = () => {
+const styles = {
+    root: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        padding: '20px',
+    },
+    '@media screen and (max-width: 450px)': {
+        root: {
+            flexDirection: 'column',
+            alignItems: 'center'
+        }
+    }
+};
+
+const Footer = (props) => {
+    const { classes } = props;
     return (
         <footer style={{ width: '100%' }}>
-            <section style={{ display: 'flex', justifyContent: 'space-around', padding: '20px 0' }}>
+            <section className={classes.root}>
                 <FooterColumn
                     title={'旗舰课程'}
                     content={['程序员算法面试课', '程序员项目实战课​', '数据科学求职实战课']}>
@@ -25,4 +41,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default withStyles(styles)(Footer);

@@ -1,8 +1,10 @@
-.homepage {
-    /* margin-left: 60px; */
-    /* width: 1024px; */
+h2 {
+  font-size: 36px;
+  letter-spacing: 0.9px;
+  color: #404040;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
-
 .homepage > div {
     padding: 60px 0;
     text-align: center;

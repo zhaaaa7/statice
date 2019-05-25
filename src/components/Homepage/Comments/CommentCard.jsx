@@ -14,7 +14,7 @@ const styles = {
     },
     quote: {
         height: '20px',
-        backgroundImage: `url('./asset/quote.png')`,
+        backgroundImage: `url('./asset/homepage/quote.png')`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
