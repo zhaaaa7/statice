@@ -25,22 +25,17 @@
 }
 
 .syllabus-enter.syllabus-enter-active {
-  /* transform:  translate3d(0,0,0); */
   opacity:  1;
-  transition: opacity 800ms ease-in .2s;
+  transition: opacity 400ms ease-in .2s;
 }
 
 .syllabus-leave {
-  /* transform:  translate3d(0,0,0); */
   opacity:  1;
-
-
 }
 
 .syllabus-leave.syllabus-leave-active {
   opacity:  0;
-
-  transition: opacity 800ms ease-out .1s;
+  transition: opacity 400ms ease-out .1s;
 }
 
 @media screen and (max-width: 1300px) {

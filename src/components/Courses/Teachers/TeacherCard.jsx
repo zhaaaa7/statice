@@ -44,9 +44,7 @@ const styles = {
 };
 
 const teacherCard = (props) => {
-
     const { classes } = props;
-
 
     return (
         <div className={classes.root}>

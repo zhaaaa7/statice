@@ -14,9 +14,7 @@ const styles = theme => ({
         fontSize: '14px',
         letterSpacing: '0.9px',
         margin: '8px 0'
-
     }
-
 });
 
 const FooterColumn = (props) => {

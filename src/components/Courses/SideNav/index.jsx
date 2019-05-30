@@ -30,9 +30,10 @@ const styles = {
         }
     }
 };
+
+
 const SideNav = (props) => {
     const { sideNavIndex, windowScroll, offsetTops, classes } = props;
-
     const scrollToPosition = windowScroll > 525;
 
     const firstLoad = <nav className={classes.container}>
@@ -44,6 +45,7 @@ const SideNav = (props) => {
             </section>
         </div>
     </nav>;
+
     const scrollLoad = <nav className={classes.container}
         style={{ position: 'fixed', top: '10px' }}>
         <div>
@@ -54,6 +56,7 @@ const SideNav = (props) => {
             </section>
         </div>
     </nav>
+
     return (
         <Fragment>
             {
@@ -62,7 +65,6 @@ const SideNav = (props) => {
             }
         </Fragment>
     );
-
 };
 
 export default withStyles(styles)(SideNav);

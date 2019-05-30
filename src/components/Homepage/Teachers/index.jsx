@@ -2,7 +2,6 @@ import React from 'react';
 import TeacherCard from './TeacherCard';
 import { withStyles } from '@material-ui/core/styles';
 
-
 const styles = {
     root: {
         display: 'flex',
@@ -18,7 +17,6 @@ const styles = {
 
 const Teachers = (props) => {
     const { classes } = props;
-
     return (
         <div>
             <h2>顶级师资</h2>
@@ -36,8 +34,6 @@ const Teachers = (props) => {
                     des={'FLAGDream Lead DS Instructor，台湾清华大学兼任教授，开设机器学习理论等相关课程。获得卡内基梅隆大学电机电脑工程博士与机器学习硕士。现就职于 Google AI，专注研发人工智能、深度学习技术以及相关产品开发。在机器学习相关领域已发表数十篇论文，包含理论创新及优化、系统分析和计算机视觉等。开发课程获誉“最好的华语深度学习课程”。'}
                     decImg={'./asset/homepage/t3.png'} />
             </section>
-
-
         </div>
     );
 };

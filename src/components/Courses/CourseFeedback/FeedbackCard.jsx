@@ -13,7 +13,6 @@ const styles = {
         margin: '20px',
         flex: 'none',
     },
-
     company: {
         width: '76px',
         height: '76px',
@@ -30,7 +29,6 @@ const styles = {
         color: '#999999',
         margin: '12px 10px',
         fontSize: '14px'
-
     },
     name: {
         color: '#404040',
@@ -50,13 +48,11 @@ const FeedbackCard = (props) => {
     const { classes } = props;
 
     return (
-
         <div className={classes.root}>
             <section style={{ textAlign: 'center' }}>
                 <p className={classes.name}>{props.name}</p>
                 <p className={classes.info}>{props.title}</p>
                 <p className={classes.content}>{props.content}</p>
-
             </section>
             <div className={classes.company} style={{ backgroundImage: `url('${props.decImg}')` }}></div>
         </div>

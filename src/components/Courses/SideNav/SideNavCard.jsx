@@ -9,7 +9,6 @@ const styles = {
         backgroundColor: '#fff',
         margin: '0 auto 20px',
         borderRadius: '5px',
-
     },
     root: {
         width: '200px',
@@ -28,8 +27,6 @@ const styles = {
                 transform: 'scale(1.1)'
             }
         }
-
-
     },
     dot: {
         display: 'inline-block',
@@ -39,11 +36,10 @@ const styles = {
         backgroundColor: 'rgba(107, 120, 132, 0.3)',
         marginRight: '10px'
     },
-
-
 };
 
 const content = ['学习路径', '课程特色', '课程大纲', '讲师介绍', '常见问题', '学员课程反馈', '课程咨询'];
+
 const SideNavCard = (props) => {
     const { sideNavIndex, offsetTops, classes } = props;
 
@@ -63,7 +59,6 @@ const SideNavCard = (props) => {
                                 <span className={classes.dot} style={{ backgroundColor: 'rgba(107, 120, 132, 1)' }}></span>
                                 {ele}
                             </li>
-
                         } else {
                             return <li key={index} onClick={() => {
                                 console.log('click', offsetTops[index]);
@@ -72,13 +67,11 @@ const SideNavCard = (props) => {
                                     behavior: "smooth"
                                 })
                             }}><span className={classes.dot}></span>{ele}</li>
-
                         }
-
                     })
                 }
-
             </ul>
+
             <RegisterCard />
         </div>
     );

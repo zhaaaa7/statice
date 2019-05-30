@@ -45,7 +45,6 @@ const styles = {
 };
 const CourseCard = (props) => {
     const { classes } = props;
-
     return (
         <div className={classes.root}>
             <section>

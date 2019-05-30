@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
 import Drawer from '@material-ui/core/Drawer';
 
 
@@ -22,12 +21,10 @@ const styles = theme => ({
         justifyContent: "space-between",
         alignItems: 'center',
         marginRight: '40px',
-
         '& li': {
             fontSize: '34px'
         }
     }
-
 });
 
 
@@ -53,18 +50,12 @@ const MobileNav = (props) => {
                     <ul className={classes.nav}>
                         <NavLink to="/courses">旗舰课程</NavLink>
                         <NavLink to="/a">免费资源</NavLink>
-
                         <NavLink to="/s">关于我们</NavLink>
-
                         <NavLink to="/d">登录</NavLink>
                     </ul>
                 </div>
             </Drawer>
-
-
-
         </div>
-
     );
 };
 

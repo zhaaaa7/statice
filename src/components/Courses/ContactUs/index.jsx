@@ -3,7 +3,6 @@ import ContactForm from './ContactForm';
 import { withStyles } from '@material-ui/core/styles';
 
 
-
 const styles = {
     root: {
         maxWidth: '1500px',
@@ -14,6 +13,8 @@ const styles = {
         padding: '80px 5%'
     }
 };
+
+
 const ContactUs = (props) => {
     const { classes } = props;
     return (

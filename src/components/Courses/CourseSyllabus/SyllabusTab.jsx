@@ -25,9 +25,7 @@ const styles = {
         },
         dec: {
             width: '40vw !important',
-
         }
-
     },
     title: {
         fontWeight: '400',
@@ -49,9 +47,9 @@ const styles = {
         borderRadius: '2px',
         backgroundColor: '#1f74d4'
     }
-
-
 };
+
+
 const SyllabusTab = (props) => {
     const { tabStatus, changetab, classes } = props;
 
@@ -64,7 +62,6 @@ const SyllabusTab = (props) => {
                         tabStatus[0] && <div className={classes.decTop}></div>
 
                     }
-
                 </div>
             </section>
             <section onClick={() => { changetab([false, true]) }}>

@@ -16,12 +16,10 @@ const styles = {
         justifyContent: "space-between",
         alignItems: 'center',
         marginRight: '40px',
-
         '& li': {
             fontSize: '14px'
         }
     }
-
 };
 
 
@@ -35,18 +33,12 @@ const Nav = (props) => {
                     <ul className={classes.nav}>
                         <NavLink to="/courses">旗舰课程</NavLink>
                         <NavLink to="/a">免费资源</NavLink>
-
                         <NavLink to="/s">关于我们</NavLink>
-
                         <NavLink to="/d">登录</NavLink>
                         <li>{windowWidth}</li>
                     </ul>
                     : <MobileNav />
             }
-
-
-
-
         </div>
 
     );

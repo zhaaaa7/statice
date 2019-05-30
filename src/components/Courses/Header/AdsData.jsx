@@ -1,7 +1,6 @@
 import React from 'react';
 import AdsDataItem from './AdsDataItem';
 import Star from './Star';
-
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
@@ -22,7 +21,6 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-around',
         borderRight: '1px solid #ececec',
-
     },
     score: {
         display: 'flex',
@@ -31,14 +29,12 @@ const styles = {
     '@media screen and (max-width: 710px)': {
         adsData: {
             display: 'none'
-
         }
     },
     '@media screen and (max-width: 825px)': {
         adsData: {
             width: '100%',
-            left: '0%'
-
+            left: '0%',
         }
     }
 };
@@ -46,6 +42,7 @@ const styles = {
 
 const AdsData = (props) => {
     const { classes } = props;
+
     return (
         <div className={classes.adsData}>
             <section className={classes.courseDes}>

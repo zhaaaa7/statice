@@ -27,7 +27,6 @@ const ContactUs = (props) => {
         <div style={{
             padding: '0',
             backgroundImage: `url('./asset/homepage/contact_bg.png')`,
-
         }}>
             <div className={classes.root}>
                 <ContactForm />

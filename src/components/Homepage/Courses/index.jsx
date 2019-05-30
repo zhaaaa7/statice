@@ -25,9 +25,10 @@ const styles = {
         fontWeight: '500'
     }
 };
+
+
 const Courses = (props) => {
     const { classes } = props;
-
     return (
         <div style={{ backgroundColor: '#f8fafc' }}>
             <h2 style={{ marginTop: '40px' }}>旗舰求职课程</h2>
@@ -43,7 +44,6 @@ const Courses = (props) => {
                     decImg={'./asset/homepage/course 3.png'} />
             </section>
             <button type="submit" className={classes.button}>点击咨询课程</button>
-
         </div>
     );
 };

@@ -15,19 +15,9 @@ const styles = {
         width: '90%',
         margin: '0 auto'
     },
-    // '@media screen and (max-width: 900px)': {
-    //     container: {
-    //         height: '1570px',
-
-    //     },
-    //     root: {
-    //         height: '1300px',
-    //     },
-    // }
 };
 
 const feedback = [
-
     {
         content: "课程结构，老师态度，课程内容很详实密集",
         name: '​Y. Wang',
@@ -96,7 +86,7 @@ const feedback = [
 
 ];
 
-// let timer;
+
 const CourseFeedback = (props) => {
     const { classes } = props;
 
@@ -106,8 +96,6 @@ const CourseFeedback = (props) => {
                 <h2 style={{ marginBottom: '30px' }}>学员课程反馈</h2>
                 <section
                     className={classes.root}
-                // onMouseEnter={() => { toggleTransition(false) }}
-                // onMouseLeave={() => { toggleTransition(true) }}>
                 >
                     <FeedbackGroup data={feedback} />
                 </section>

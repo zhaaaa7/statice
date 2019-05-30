@@ -27,6 +27,8 @@ const styles = {
         fontWeight: '500'
     }
 };
+
+
 const Questions = (props) => {
     const { classes } = props;
 
@@ -35,7 +37,6 @@ const Questions = (props) => {
             <div>
                 <h2 style={{ marginTop: '40px' }}>常见问题</h2>
                 <section className={classes.root}>
-
                     <QuestionPanel />
                 </section>
             </div>

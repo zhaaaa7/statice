@@ -56,7 +56,6 @@ const CommentCard = (props) => {
     const { classes } = props;
 
     return (
-
         <div className={classes.root}>
             <section style={{ textAlign: 'center' }}>
                 <div className={classes.quote}></div>

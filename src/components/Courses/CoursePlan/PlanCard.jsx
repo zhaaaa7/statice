@@ -10,10 +10,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-
-
     },
-
     icon: {
         width: '60px',
         height: '60px',
@@ -24,17 +21,13 @@ const styles = {
         backgroundPosition: 'center center',
         position: 'relative',
         marginBottom: '30px',
-
         '&::after': {
             content: '""',
             position: 'absolute',
             top: '30px',
             left: '61px',
             width: '128px',
-            // height: '10px',
-            // backgroundColor: 'red',
             border: '1.5px dashed #afcdea'
-
         }
     },
     info: {
@@ -44,15 +37,12 @@ const styles = {
         fontWeight: '400',
         fontSize: '16px',
         color: '#404040'
-
-
     },
     description: {
         color: '#999999',
         fontSize: '13px',
         lineHeight: '1.77',
         margin: '10px 0'
-
     },
 
     '@media screen and (max-width: 740px)': {
@@ -75,12 +65,13 @@ const styles = {
                 left: '30px',
                 transform: 'rotate(90deg)',
                 transformOrigin: 'top left'
-
             }
         },
     }
 
 };
+
+
 const PlanCard = (props) => {
     const { classes } = props;
 

@@ -15,8 +15,6 @@ const styles = {
             flexDirection: 'column'
         },
     },
-    tab: {},
-    content: {},
     button: {
         width: '190px',
         height: '35px',
@@ -39,11 +37,9 @@ const CourseSyllabus = (props) => {
                 <section className={classes.root}>
                     <div className={classes.tab}>
                         <SyllabusTab changetab={(tab) => { setTabStatus(tab) }} tabStatus={tabStatus} />
-
                     </div>
                     <div className={classes.content}>
                         <SyllabusContent tabStatus={tabStatus} />
-
                     </div>
                 </section>
                 <button type="submit" className={classes.button}>点击咨询课程</button>

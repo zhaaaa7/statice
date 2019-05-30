@@ -25,9 +25,6 @@ const styles = {
 const NavBar = (props) => {
     const { windowScroll, windowWidth, classes } = props;
 
-    // console.log('!!!nav', windowScroll);
-
-
     return (
         <nav className={classes.root}
             style={windowScroll < 250 ? {
@@ -41,7 +38,6 @@ const NavBar = (props) => {
             <Logo />
             <Nav windowWidth={windowWidth} />
         </nav>
-
     );
 };
 

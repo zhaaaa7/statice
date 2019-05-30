@@ -8,7 +8,6 @@ const styles = {
     root: {
         width: '70%',
         margin: '0 auto',
-
     },
     content: {
         fontSize: '14px',
@@ -16,8 +15,6 @@ const styles = {
         color: '#676767',
         textAlign: 'left'
     },
-
-
     panel: {
         boxShadow: '0px -1px 1px 0px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.2)',
         backgroundColor: '#fff',
@@ -35,6 +32,8 @@ const styles = {
     }
 
 };
+
+
 const SyllabusContent = (props) => {
     const { classes } = props;
 

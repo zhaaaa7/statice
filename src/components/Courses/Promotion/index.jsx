@@ -7,12 +7,19 @@ const styles = {
         width: '70%',
         margin: '0 auto'
     },
+    '@media screen and (max-width: 700px)': {
+        root: {
+            flexDirection: 'column',
+            alignItems: 'center',
+        },
+        dec: {
+            margin: '20px 0 0 0 !important',
+        }
+    },
     info: {
         width: '272px',
         display: 'flex',
         justifyContent: 'space-between',
-
-
     },
     promotion: {
         fontSize: '14px',
@@ -20,7 +27,6 @@ const styles = {
         textAlign: 'left',
         lineHeight: '2',
         fontWeight: '500',
-
     },
     oldnumber: {
         fontSize: '24px',
@@ -59,21 +65,24 @@ const styles = {
         height: '160px',
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url("./asset/courses/earlybird.png")`
+        backgroundImage: `url("./asset/courses/earlybird.png")`,
+        marginLeft: '8%',
     }
 };
+
+
 const Promotion = (props) => {
     const { classes } = props;
 
     return (
         <div style={{
-            height: '215px',
+            // height: '215px',
             opacity: '0.95',
             backgroundColor: '#1f74d4',
             padding: '30px'
         }} >
             <section className={classes.root}>
-                <div style={{ marginRight: '120px' }}>
+                <div style={{ width: '272px' }}>
                     <div className={classes.info}>
                         <div>
                             <p className={classes.promotion}>课程原价</p>
@@ -87,10 +96,8 @@ const Promotion = (props) => {
                     <button type="submit" className={classes.button}>立即报名</button>
                 </div>
                 <div className={classes.dec}>
-
                 </div>
             </section>
-
         </div>
     );
 };

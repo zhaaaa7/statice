@@ -17,8 +17,6 @@ const CoontactInfo = () => {
             }}>
                 <p style={{ marginBottom: '20px' }}>微信公众号</p>
                 <img src="./asset/courses/qr.png" alt="qrcode" width="150px" />
-
-
             </div>
         </div>
     );

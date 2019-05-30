@@ -46,19 +46,17 @@ const styles = {
 
 const Star = (props) => {
     const { classes } = props;
+
     return (
         <div className={classes.root}>
             <div className={classes.icon} style={{ backgroundImage: props.icon }}></div>
             <div>
                 <div className={classes.des}>{props.des}</div>
                 <div style={{ display: 'flex' }}>
-
                     <div style={{ height: '17px', width: '93px', display: 'flex', marginTop: '4px' }}>
                         <div className={classes.star1}></div>
                         <div className={classes.star2}></div>
                     </div>
-
-
                     <div className={classes.content}>{props.content}</div>
                 </div>
             </div>

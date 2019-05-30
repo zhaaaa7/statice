@@ -48,7 +48,7 @@ const styles = {
             width: '133px',
             height: '2px',
             transform: 'rotate(4deg)',
-            backgroundColor: '#f9c2b2'
+            backgroundColor: '#ff825e'
         }
     },
     number: {
@@ -65,14 +65,14 @@ const styles = {
         backgroundColor: '#fff',
         fontSize: '14px',
         fontWeight: '600',
-
+        cursor: 'pointer'
     },
 
 };
 const RegisterCard = (props) => {
     const { classes } = props;
-
     const [showButton, setShowButton] = useState(false);
+
     return (
         <div className={classes.root} onMouseEnter={() => { setShowButton(true) }} onMouseLeave={() => { setShowButton(false) }}>
             {!showButton && <div className={classes.info}>
@@ -87,8 +87,6 @@ const RegisterCard = (props) => {
             {
                 showButton && <button type="submit" className={classes.button}>立即报名</button>
             }
-
-
         </div>
     );
 };

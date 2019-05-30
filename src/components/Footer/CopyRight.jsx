@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const CopyRight = () => {
     return (
         <p style={{
@@ -13,7 +12,7 @@ const CopyRight = () => {
             color: '#5e5e5e',
             fontSize: '14px',
             letterSpacing: '0.9px',
-        }}>All rights reserved. 2019 FLAGDream </p>
+        }}>&copy; All rights reserved. 2019 FLAGDream </p>
     );
 }
 

@@ -20,7 +20,6 @@ const styles = {
         fontSize: '14px',
         color: '#999999',
         marginBottom: '4px'
-
     },
     content: {
         fontSize: '20px',
@@ -32,15 +31,14 @@ const styles = {
 
 const AdsDataItem = (props) => {
     const { classes } = props;
+
     return (
         <div className={classes.root}>
             <div className={classes.icon} style={{ backgroundImage: props.icon }}></div>
             <div>
                 <div className={classes.des}>{props.des}</div>
-
                 <div className={classes.content}>{props.content}</div>
             </div>
-
         </div>
     );
 };

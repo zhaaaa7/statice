@@ -9,7 +9,6 @@ const styles = {
         boxShadow: '0 2px 7px 0 rgba(0, 0, 0, 0.4)',
         backgroundColor: '#fff',
         margin: '0 10px 60px',
-
     },
     icon: {
         width: '82px',
@@ -23,15 +22,12 @@ const styles = {
         fontWeight: '600',
         fontSize: '16px',
         color: '#404040',
-
-
     },
     description: {
         padding: '0 30px',
         color: '#999999',
         fontSize: '13px',
         margin: '10px 0'
-
     },
 
 };

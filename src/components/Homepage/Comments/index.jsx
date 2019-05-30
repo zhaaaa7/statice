@@ -120,15 +120,13 @@ const Comments = (props) => {
 
 
     useEffect(() => {
-        // clearTimeout(timer);
         let timer;
         if (transition) {
             timer = setTimeout(() => {
                 setCount((count + 1) % 3);
-            }, 3000);
+            }, 2500);
             // console.log('hhh', count);
         }
-
 
         return () => { clearTimeout(timer); };
     });
@@ -142,8 +140,7 @@ const Comments = (props) => {
                 onMouseEnter={() => { toggleTransition(false) }}
                 onMouseLeave={() => { toggleTransition(true) }}>
                 <ReactCSSTransitionGroup
-
-                    transitionName="example"
+                    transitionName="studentComments"
                     transitionEnterTimeout={400}
                     transitionLeaveTimeout={200}
                 >
@@ -158,9 +155,6 @@ const Comments = (props) => {
                     {
                         count === 2 && <CommentGroup key={3} data={comments[count]} />
                     }
-
-
-
 
                 </ReactCSSTransitionGroup>
             </section>
@@ -184,8 +178,6 @@ const Comments = (props) => {
                     })
                 }
             </div>
-
-
         </div>
     );
 };

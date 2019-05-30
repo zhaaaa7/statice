@@ -43,7 +43,6 @@ const styles = {
             color: '#404040',
             fontSize: '14px',
             paddingLeft: '6px'
-
         }
     },
     button1: {
@@ -75,14 +74,10 @@ const Content = (props) => {
 
     return (
         <div className={classes.root}>
-
             <h1 className={classes.text1}>程序员算法面试课</h1>
             <p className={classes.text2}>​在这三个月的项目实战课程中，你将会在资深工程师的带领下，独立完成四个完整的工业级别项目，并且深入学习从全栈网站开发、大数据架构应用到后端分布式系统设计的前沿技术，掌握一名硅谷软件工程师的必备技术栈。</p>
-
             <form style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
                 <button type="submit" className={classes.button1}>立即报名</button>
-
-
                 <button type="submit" className={classes.button2}>点击试听</button>
             </form>
         </div>

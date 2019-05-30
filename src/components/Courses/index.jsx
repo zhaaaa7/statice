@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Courses.css';
+import { useWindowWidth } from '../../customHook.js';
+import { useWindowScroll } from '../../customHook.js';
 
 import Nav from '../Navigation/index';
 import Header from './Header/index';
@@ -15,10 +17,9 @@ import Footer from '../Footer/index';
 import SideNav from './SideNav/index';
 
 const Courses = (props) => {
-    const { offsetTops, windowScroll, windowWidth } = props;
-    // console.log('courses', offsetTops);
-
     const [sideNavIndex, setSideNavIndex] = useState(window.scrollY);
+    const { windowWidth, offsetTops } = useWindowWidth();
+    const windowScroll = useWindowScroll();
 
     useEffect(() => {
         if (offsetTops.length > 0) {
@@ -40,7 +41,6 @@ const Courses = (props) => {
     return (
         <div className="courses">
             <SideNav sideNavIndex={sideNavIndex} offsetTops={offsetTops} windowScroll={windowScroll} />
-
             <Nav windowWidth={windowWidth} windowScroll={windowScroll} />
             <Header />
             <CoursePlan />

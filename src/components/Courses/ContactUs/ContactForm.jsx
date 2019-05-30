@@ -120,7 +120,6 @@ const CoontactForm = (props) => {
                     label="微信号"
                     className={classes.textField}
                 />
-
                 <button type="submit" className={classes.submitButton}>提交</button>
             </form>
             <p className={classes.divider}>或</p>
@@ -134,7 +133,6 @@ const CoontactForm = (props) => {
                     </div>
                 </section>
             </footer>
-
         </div>
     );
 };
