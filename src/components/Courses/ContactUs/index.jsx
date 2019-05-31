@@ -8,7 +8,7 @@ const styles = {
         maxWidth: '1500px',
         display: 'flex',
         justifyContent: 'space-around',
-        backgroundImage: `url('./asset/homepage/contact_bg.png')`,
+        // backgroundImage: `url('./asset/homepage/contact_bg.png')`,
         margin: '0 auto',
         padding: '80px 5%'
     }
@@ -18,11 +18,14 @@ const styles = {
 const ContactUs = (props) => {
     const { classes } = props;
     return (
-        <div style={{
-            padding: '0',
-            backgroundImage: `url('./asset/homepage/contact_bg.png')`,
-
-        }} className="roots">
+        <div
+            style={{
+                padding: '0',
+                backgroundImage: `url('./asset/homepage/contact_bg.png')`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+            }}
+            className="roots">
             <div>
                 <section className={classes.root}>
                     <ContactForm />

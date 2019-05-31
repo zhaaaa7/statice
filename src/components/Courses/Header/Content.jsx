@@ -31,20 +31,6 @@ const styles = {
         marginTop: '-18px',
         lineHeight: '1.64'
     },
-    input: {
-        width: '190px',
-        height: '35px',
-        borderRadius: '2px',
-        border: 'solid 1px #fff',
-        backgroundColor: '#fff',
-        marginRight: '10px',
-        '&::placeholder': {
-            opacity: '0.45',
-            color: '#404040',
-            fontSize: '14px',
-            paddingLeft: '6px'
-        }
-    },
     button1: {
         width: '156px',
         height: '35px',

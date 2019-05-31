@@ -12,6 +12,7 @@ const styles = {
 
     },
 };
+
 const CourseFeature = (props) => {
     const { classes } = props;
 
