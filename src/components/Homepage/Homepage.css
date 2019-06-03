@@ -1,0 +1,37 @@
+h2 {
+  font-size: 36px;
+  letter-spacing: 0.9px;
+  color: #404040;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.homepage > div {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.homepage > div > section ,
+.homepage > footer > section{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.studentComments-enter {
+    transform:  translate3d(1024px,0,0);
+  }
+  
+.studentComments-enter.studentComments-enter-active {
+  transform: matrix(1,0,0,1,0,0);
+  transition: transform 400ms ease-out;
+}
+
+.studentComments-leave {
+  transform: matrix(1,0,0,1,0,0);
+}
+
+.studentComments-leave.studentComments-leave-active {
+  transform:  translate3d(-1024px,0,0);
+  transition: transform 200ms linear;
+}
