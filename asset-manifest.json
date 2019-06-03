@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flagdream/build/static/css/main.8e736f8a.chunk.css",
+    "main.js": "/flagdream/build/static/js/main.3077d5b3.chunk.js",
+    "main.js.map": "/flagdream/build/static/js/main.3077d5b3.chunk.js.map",
+    "runtime~main.js": "/flagdream/build/static/js/runtime~main.270eebec.js",
+    "runtime~main.js.map": "/flagdream/build/static/js/runtime~main.270eebec.js.map",
+    "static/js/2.19d930a1.chunk.js": "/flagdream/build/static/js/2.19d930a1.chunk.js",
+    "static/js/2.19d930a1.chunk.js.map": "/flagdream/build/static/js/2.19d930a1.chunk.js.map",
+    "index.html": "/flagdream/build/index.html",
+    "precache-manifest.fcea84c8f02f3b460eea8bc7600fbadd.js": "/flagdream/build/precache-manifest.fcea84c8f02f3b460eea8bc7600fbadd.js",
+    "service-worker.js": "/flagdream/build/service-worker.js",
+    "static/css/main.8e736f8a.chunk.css.map": "/flagdream/build/static/css/main.8e736f8a.chunk.css.map"
+  }
+}
