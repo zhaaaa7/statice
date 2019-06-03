@@ -14,6 +14,12 @@ const styles = {
         margin: '20px 20px 20px 0',
         maxWidth: '600px'
     },
+    '@media screen and (max-width: 500px)': {
+        root: {
+            width: '300px',
+
+        }
+    },
     header: {
         position: 'absolute',
         top: '-20px',
