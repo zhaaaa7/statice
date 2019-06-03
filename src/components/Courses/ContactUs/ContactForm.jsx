@@ -7,13 +7,12 @@ const styles = {
     root: {
         position: 'relative',
         width: '80%',
-        height: '470px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
-        margin: '20px 20px 0 0',
+        margin: '20px 0',
         maxWidth: '600px',
-        minWidth: '270px'
+        minWidth: '270px',
     },
     header: {
         position: 'absolute',
@@ -77,11 +76,11 @@ const styles = {
     footer: {
         textAlign: 'left',
         width: '80%',
-        margin: '0 auto'
+        margin: '0 auto 20px'
     },
     contact: {
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     reminder: {
         fontSize: '16px',

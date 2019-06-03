@@ -8,7 +8,7 @@ const styles = {
         display: 'flex',
         justifyContent: "space-between",
         alignItems: 'center',
-        width: '100%',
+        width: '100vw',
         height: '70px',
         opacity: 0,
         position: 'fixed',

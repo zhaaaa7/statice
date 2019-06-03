@@ -13,7 +13,8 @@ const styles = {
     '@media screen and (max-width: 450px)': {
         root: {
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginLeft: '0px !important'
         }
     }
 };

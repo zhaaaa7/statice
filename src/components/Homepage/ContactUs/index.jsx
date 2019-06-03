@@ -10,6 +10,8 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-around',
         backgroundImage: `url('./asset/homepage/contact_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         margin: '0 auto',
         padding: '80px 5%'
     },
@@ -26,7 +28,6 @@ const ContactUs = (props) => {
     return (
         <div style={{
             padding: '0',
-            backgroundImage: `url('./asset/homepage/contact_bg.png')`,
         }}>
             <div className={classes.root}>
                 <ContactForm />

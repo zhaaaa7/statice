@@ -1,8 +1,25 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 
-const CoontactInfo = () => {
+
+const styles = {
+    root: {
+        width: '400px',
+        color: '#fff',
+    },
+    '@media screen and (max-width: 500px)': {
+        root: {
+            width: '300px',
+
+        }
+    },
+};
+
+const CoontactInfo = (props) => {
+    const { classes } = props;
+
     return (
-        <div style={{ width: '400px', color: '#fff' }}>
+        <div className={classes.root}>
             <h2 style={{
                 color: '#fff',
                 fontSize: '36px',
@@ -22,4 +39,4 @@ const CoontactInfo = () => {
     );
 };
 
-export default CoontactInfo;
+export default withStyles(styles)(CoontactInfo);
