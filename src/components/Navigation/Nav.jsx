@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { NavLink } from 'react-router-dom'
 import MobileNav from './MobileNav';
+import { useMediaQuery } from '../../customHook';
 
 const styles = {
     root: {
@@ -24,23 +25,23 @@ const styles = {
 
 
 const Nav = (props) => {
-    const { windowWidth, classes } = props;
+    const { classes } = props;
+    let mobileView = useMediaQuery("(max-width:700px)");
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id="nav">
             {
-                windowWidth > 700 ?
-                    <ul className={classes.nav}>
+                mobileView ?
+                    <MobileNav />
+                    : <ul className={classes.nav}>
                         <NavLink to="/courses">旗舰课程</NavLink>
                         <NavLink to="/a">免费资源</NavLink>
                         <NavLink to="/aboutus">关于我们</NavLink>
                         <NavLink to="/d">登录</NavLink>
-                        <li>{windowWidth}</li>
+                        <li>{window.innerWidth}</li>
                     </ul>
-                    : <MobileNav />
             }
         </div>
-
     );
 };
 
