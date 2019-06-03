@@ -1,6 +1,5 @@
 import React from 'react';
 import './Homepage.css';
-import { useWindowWidth } from '../../customHook.js';
 import { useWindowScroll } from '../../customHook.js';
 
 import Nav from '../Navigation/index';
@@ -12,12 +11,11 @@ import Footer from '../Footer/index';
 import ContactUs from './ContactUs/index';
 
 const Homepage = (props) => {
-    const { windowWidth } = useWindowWidth();
     const windowScroll = useWindowScroll();
 
     return (
         <div className="homepage">
-            <Nav windowWidth={windowWidth} windowScroll={windowScroll} />
+            <Nav windowScroll={windowScroll} />
             <Header />
             <Courses />
             <Teachers />

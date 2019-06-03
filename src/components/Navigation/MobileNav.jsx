@@ -5,6 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import Drawer from '@material-ui/core/Drawer';
+import Logo from './Logo';
 
 
 const styles = theme => ({
@@ -14,16 +15,22 @@ const styles = theme => ({
         top: '8px'
     },
     nav: {
-        marginTop: '25px',
+        marginTop: '65px',
         width: '40vw',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: "space-between",
         alignItems: 'center',
-        marginRight: '40px',
-        '& li': {
-            fontSize: '34px'
+        '& a': {
+            fontSize: '24px',
+            margin: '10px 0'
         }
+    },
+    logo: {
+        position: 'absolute',
+        top: '10px',
+        left: '50%',
+        transform: 'translateX(-50%)'
     }
 });
 
@@ -47,6 +54,9 @@ const MobileNav = (props) => {
                     <IconButton aria-label="NavMenu" onClick={() => toggleShowNav(false)}>
                         <CloseIcon />
                     </IconButton>
+                    <div className={classes.logo} >
+                        <Logo />
+                    </div>
                     <ul className={classes.nav}>
                         <NavLink to="/courses">旗舰课程</NavLink>
                         <NavLink to="/a">免费资源</NavLink>

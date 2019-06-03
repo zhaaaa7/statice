@@ -47,15 +47,16 @@ export function useWindowWidth() {
             getWindowWidth(getWindowDimensions());
             setOffSetTops(getHTMLNodeList());
         });
-
         window.addEventListener('resize', resizeCallback);
+
         return () => {
             window.removeEventListener('resize', resizeCallback);
         }
     }, []);
 
     return { windowWidth, offsetTops };
-};
+}
+
 
 export function useWindowScroll() {
     const [windowScroll, getWindowScroll] = useState(getScroll());
@@ -66,9 +67,29 @@ export function useWindowScroll() {
         };
         window.addEventListener('scroll', scrollCallback);
 
-        return () => { window.addEventListener('scroll', scrollCallback); };
-
+        return () => { window.removeEventListener('scroll', scrollCallback); };
     }, []);
 
     return windowScroll;
+}
+
+
+export function useMediaQuery(query) {
+    const mql = window.matchMedia(query);
+    const [matches, setMatches] = useState(mql.matches);
+
+    useEffect(() => {
+        const listener = (e) => {
+            if (e.matches) {
+                setMatches(true);
+            } else {
+                setMatches(false);
+            }
+        };
+        mql.addListener(listener);
+
+        return () => { mql.removeListener(listener) };
+    }, [mql]);
+
+    return matches;
 }

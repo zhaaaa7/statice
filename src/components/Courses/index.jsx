@@ -18,7 +18,7 @@ import SideNav from './SideNav/index';
 
 const Courses = (props) => {
     const [sideNavIndex, setSideNavIndex] = useState(window.scrollY);
-    const { windowWidth, offsetTops } = useWindowWidth();
+    const { offsetTops } = useWindowWidth();
     const windowScroll = useWindowScroll();
 
     useEffect(() => {
@@ -41,7 +41,7 @@ const Courses = (props) => {
     return (
         <div className="courses">
             <SideNav sideNavIndex={sideNavIndex} offsetTops={offsetTops} windowScroll={windowScroll} />
-            <Nav windowWidth={windowWidth} windowScroll={windowScroll} />
+            <Nav windowScroll={windowScroll} />
             <Header />
             <CoursePlan />
             <CourseFeature />
