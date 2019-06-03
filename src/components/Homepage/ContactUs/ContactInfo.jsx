@@ -4,15 +4,11 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
     root: {
-        width: '400px',
+        width: '90%',
+        maxWidth: '400px',
         color: '#fff',
     },
-    '@media screen and (max-width: 500px)': {
-        root: {
-            width: '300px',
 
-        }
-    },
 };
 
 const CoontactInfo = (props) => {
