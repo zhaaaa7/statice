@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81eee610c5d56fa58f9189ed32ee6043",
+    "revision": "b451f0ac44d9524ae0912d1dee815c35",
     "url": "/flagdream/index.html"
   },
   {
-    "revision": "276d46ae038afd451fad",
+    "revision": "5deedc452e6a0eea8886",
     "url": "/flagdream/static/css/main.8e736f8a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flagdream/static/js/2.e4c74b73.chunk.js"
   },
   {
-    "revision": "276d46ae038afd451fad",
-    "url": "/flagdream/static/js/main.033fff26.chunk.js"
+    "revision": "5deedc452e6a0eea8886",
+    "url": "/flagdream/static/js/main.528d9f22.chunk.js"
   },
   {
     "revision": "bb51003e8c589483ff20",
