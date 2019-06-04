@@ -7,6 +7,7 @@ const styles = {
     root: {
         display: 'flex',
         justifyContent: 'space-around',
+
         '& > div:last-child > div::after': {
             border: 'none'
         }
@@ -23,7 +24,7 @@ const CoursePlan = (props) => {
     const { classes } = props;
 
     return (
-        <div style={{ backgroundColor: '#f8fafc' }} className="roots">
+        <div style={{ backgroundColor: '#f8fafc', }} className="roots">
             <div>
                 <h2 style={{ marginTop: '40px' }}>量身定制学习计划</h2>
                 <section className={classes.root}>

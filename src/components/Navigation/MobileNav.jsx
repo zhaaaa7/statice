@@ -11,7 +11,7 @@ import Logo from './Logo';
 const styles = theme => ({
     root: {
         position: 'absolute',
-        right: '26px',
+        right: '0',
         top: '8px'
     },
     nav: {

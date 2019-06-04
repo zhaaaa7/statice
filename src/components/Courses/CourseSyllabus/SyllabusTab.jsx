@@ -12,21 +12,6 @@ const styles = {
             height: '50%'
         }
     },
-    '@media screen and (max-width: 690px)': {
-        root: {
-            width: '100%',
-            height: '90px',
-
-            display: 'flex',
-            '& > section': {
-                width: '50%',
-                padding: '0 5%'
-            }
-        },
-        dec: {
-            width: '40vw !important',
-        }
-    },
     title: {
         fontWeight: '400',
         fontSize: '18px',
@@ -46,7 +31,27 @@ const styles = {
         height: '4px',
         borderRadius: '2px',
         backgroundColor: '#1f74d4'
-    }
+    },
+    '@media screen and (max-width: 690px)': {
+        root: {
+            width: '100%',
+            height: '90px',
+
+            display: 'flex',
+            '& > section': {
+                width: '50%',
+                padding: '0 5%'
+            }
+        },
+        dec: {
+            width: '40vw',
+        }
+    },
+    '@media screen and (max-width: 500px)': {
+        title: {
+            fontSize: '14px'
+        }
+    },
 };
 
 

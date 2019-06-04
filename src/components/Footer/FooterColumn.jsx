@@ -14,6 +14,11 @@ const styles = theme => ({
         fontSize: '14px',
         letterSpacing: '0.9px',
         margin: '8px 0'
+    },
+    '@media screen and (max-width: 740px)': {
+        ul: {
+            width: '50%'
+        }
     }
 });
 
@@ -21,7 +26,7 @@ const FooterColumn = (props) => {
     const { classes } = props;
 
     return (
-        <ul style={{ width: '50%' }}>
+        <ul className={classes.ul}>
             <h5 className={classes.section}>{props.title}</h5>
             {props.content.map(ele => {
                 return <li className={classes.item} key={ele}>{ele}</li>

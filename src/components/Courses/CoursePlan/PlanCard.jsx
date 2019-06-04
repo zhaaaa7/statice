@@ -47,7 +47,8 @@ const styles = {
 
     '@media screen and (max-width: 740px)': {
         root: {
-            width: '400px',
+            width: '100%',
+            maxWidth: '400px',
             height: '160px',
             flexDirection: 'row',
             justifyContent: 'center'

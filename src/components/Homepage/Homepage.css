@@ -35,3 +35,9 @@ h2 {
   transform:  translate3d(-1024px,0,0);
   transition: transform 200ms linear;
 }
+
+@media screen and (max-width: 500px) {
+  .homepage > div {
+    padding: 30px 0;
+}
+}

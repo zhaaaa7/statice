@@ -3,11 +3,13 @@
 }
 .courses > div {
     padding: 60px 0;
-    
+    width: 100%;
     text-align: center;
 }
 
-.courses > div > div ,
+
+
+.courses > div > div,
 .courses > footer > section{
   max-width: 760px;
   width: 100%;
@@ -39,13 +41,24 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .courses > div > div {
-    margin-left: 20px;
+  .courses > div > div{
+    margin-left: 30px;
+  }
+
+  .courses > footer > section {
+    margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .courses > div > div {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .courses > div {
+    padding: 30px 0;
+
   }
 }

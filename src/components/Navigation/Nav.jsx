@@ -38,7 +38,6 @@ const Nav = (props) => {
                         <NavLink to="/a">免费资源</NavLink>
                         <NavLink to="/aboutus">关于我们</NavLink>
                         <NavLink to="/d">登录</NavLink>
-                        <li>{window.innerWidth}</li>
                     </ul>
             }
         </div>

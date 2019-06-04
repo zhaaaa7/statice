@@ -15,6 +15,11 @@ const styles = {
             marginBottom: '30px'
         }
     },
+    '@media screen and (max-width: 700px)': {
+        root: {
+            width: '80%',
+        }
+    },
     text1: {
         color: '#fff',
         textAlign: 'center',

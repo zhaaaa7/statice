@@ -28,7 +28,12 @@ const styles = {
         fontSize: '18px',
         fontWeight: '300',
         marginTop: '-18px'
-
+    },
+    form: {
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     input: {
         width: '190px',
@@ -37,6 +42,8 @@ const styles = {
         border: 'solid 1px #fff',
         backgroundColor: '#fff',
         marginRight: '10px',
+        marginBottom: '10px',
+
         '&::placeholder': {
             opacity: '0.45',
             color: '#404040',
@@ -52,8 +59,34 @@ const styles = {
         backgroundColor: '#1f74d4',
         color: '#fff',
         fontSize: '14px',
-        fontWeight: '500'
-    }
+        fontWeight: '500',
+        marginBottom: '10px'
+    },
+    '@media screen and (max-width: 500px)': {
+        root: {
+            width: '90%',
+        },
+        text1: {
+            fontSize: '32px'
+        },
+        text2: {
+            fontSize: '14px'
+        },
+        form: {
+            flexDirection: 'column'
+        }
+    },
+    '@media screen and (max-width: 400px)': {
+        root: {
+            width: '90%',
+        },
+        text1: {
+            fontSize: '26px'
+        },
+        text2: {
+            fontSize: '14px'
+        },
+    },
 };
 
 
@@ -63,7 +96,7 @@ const Content = (props) => {
         <div className={classes.root}>
             <h1 className={classes.text1}>从这里走向世界一流公司</h1>
             <h3 className={classes.text2}>​用最优质的资源，帮助未来科技从业者实现求职梦想</h3>
-            <form style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
+            <form className={classes.form}>
                 <input type="text"
                     className={classes.input}
                     placeholder="输入你的邮箱"
