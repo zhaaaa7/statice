@@ -6,7 +6,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const styles = {
     root: {
         width: '400px',
-        height: '175px',
+        height: '185px',
         margin: '0 auto',
         position: 'relative'
 

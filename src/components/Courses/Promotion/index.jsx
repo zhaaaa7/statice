@@ -1,5 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
 
 const styles = {
     root: {
@@ -58,8 +60,16 @@ const styles = {
         color: '#1f74d4',
         backgroundColor: '#fff',
         fontSize: '14px',
-        fontWeight: '600'
+        fontWeight: '600',
+        '&:hover': {
+            color: '#fff',
+
+            backgroundColor: '#404040',
+            boxShadow: '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)'
+
+        }
     },
+
     dec: {
         width: '160px',
         height: '160px',
@@ -93,7 +103,7 @@ const Promotion = (props) => {
                             <p className={classes.number}>2998 USD</p>
                         </div>
                     </div>
-                    <button type="submit" className={classes.button}>立即报名</button>
+                    <Button variant="contained" size="medium" className={classes.button}>立即报名</Button>
                 </div>
                 <div className={classes.dec}>
                 </div>

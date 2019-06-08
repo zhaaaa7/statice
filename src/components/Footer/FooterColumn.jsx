@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
+
     section: {
         color: '#404040',
         fontSize: '18px',
@@ -15,9 +16,14 @@ const styles = theme => ({
         letterSpacing: '0.9px',
         margin: '8px 0'
     },
-    '@media screen and (max-width: 740px)': {
-        ul: {
-            width: '50%'
+    '@media screen and (max-width: 500px)': {
+        section: {
+            fontSize: '16px',
+
+        },
+        item: {
+            fontSize: '12px',
+
         }
     }
 });

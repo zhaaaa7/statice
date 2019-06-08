@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
@@ -15,7 +15,22 @@ const styles = {
 };
 
 const Header = (props) => {
-    const { classes } = props;
+    const { data, money, classes } = props;
+    const initalNum = data > 50 ? data * 0.5 : 0;
+    const step = data > 100 ? data * 0.01 : 1;
+    const [num, setNum] = useState(initalNum);
+
+    useEffect(() => {
+        let timer;
+        if (num < data) {
+            timer = setTimeout(() => {
+                setNum(num + step);
+            }, 50);
+        }
+
+        return () => { clearTimeout(timer) };
+    }, [num]);
+
     return (
         <div className={classes.root}>
             <div style={{
@@ -23,7 +38,9 @@ const Header = (props) => {
                 fontSize: '28px',
                 fontWeight: '500',
                 color: '#1f74d4'
-            }}>{props.data}</div>
+            }}>
+                {money ? '$' : ''}
+                {num.toLocaleString('en-IN')}{'+'}</div>
             <div style={{
                 fontSize: '16px',
                 color: '#5e5e5e'

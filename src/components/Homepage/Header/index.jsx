@@ -8,7 +8,6 @@ const styles = {
     root: {
         height: '571px',
         position: 'relative',
-        marginTop: '90px',
     },
     '@media screen and (max-width: 500px)': {
         root: {

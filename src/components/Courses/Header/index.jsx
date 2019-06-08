@@ -8,7 +8,6 @@ const styles = {
     root: {
         height: '395px',
         position: 'relative',
-        marginTop: '90px',
     }
 };
 const Header = (props) => {

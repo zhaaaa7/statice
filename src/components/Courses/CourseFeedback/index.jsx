@@ -94,9 +94,7 @@ const CourseFeedback = (props) => {
         <div style={{ backgroundColor: '#fff', height: '500px' }} className="roots">
             <div>
                 <h2 style={{ marginBottom: '30px' }}>学员课程反馈</h2>
-                <section
-                    className={classes.root}
-                >
+                <section className={classes.root}>
                     <FeedbackGroup data={feedback} />
                 </section>
             </div>

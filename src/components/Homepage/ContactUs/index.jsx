@@ -29,7 +29,7 @@ const styles = {
 const ContactUs = (props) => {
     const { classes } = props;
     return (
-        <div className={classes.container}>
+        <div className={classes.container} id="hp-contactUs">
             <div className={classes.root}>
                 <ContactForm />
                 <ContactInfo />

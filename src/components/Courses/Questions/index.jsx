@@ -14,8 +14,6 @@ const styles = {
             flexDirection: 'column'
         },
     },
-    tab: {},
-    content: {},
     button: {
         width: '190px',
         height: '35px',
@@ -35,7 +33,7 @@ const Questions = (props) => {
     return (
         <div style={{ backgroundColor: '#f8fafc' }} className="roots">
             <div>
-                <h2 style={{ marginTop: '40px' }}>常见问题</h2>
+                <h2>常见问题</h2>
                 <section className={classes.root}>
                     <QuestionPanel />
                 </section>

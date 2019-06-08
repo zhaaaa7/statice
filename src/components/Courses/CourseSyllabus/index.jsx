@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import SyllabusTab from './SyllabusTab';
 import SyllabusContent from './SyllabusContent';
+import Button from '@material-ui/core/Button';
+
 
 
 const styles = {
@@ -23,17 +25,25 @@ const styles = {
         backgroundColor: '#1f74d4',
         color: '#fff',
         fontSize: '14px',
-        fontWeight: '500'
+        fontWeight: '500',
+        '&:hover': {
+            backgroundColor: '#11539d',
+            boxShadow: '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)'
+
+        }
     }
 };
 const CourseSyllabus = (props) => {
     const { classes } = props;
     const [tabStatus, setTabStatus] = useState([true, false]);
 
+    const contactUsTop = document.getElementById('course-contactUs');
+
+
     return (
         <div style={{ backgroundColor: '#f8fafc' }} className="roots">
             <div>
-                <h2 style={{ marginTop: '40px' }}>课程大纲</h2>
+                <h2>课程大纲</h2>
                 <section className={classes.root}>
                     <div className={classes.tab}>
                         <SyllabusTab changetab={(tab) => { setTabStatus(tab) }} tabStatus={tabStatus} />
@@ -42,7 +52,13 @@ const CourseSyllabus = (props) => {
                         <SyllabusContent tabStatus={tabStatus} />
                     </div>
                 </section>
-                <button type="submit" className={classes.button}>点击咨询课程</button>
+
+                <Button variant="contained" size="medium" color="primary" className={classes.button}
+                    onClick={() => {
+                        contactUsTop.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+                    }}>
+                    点击咨询课程
+                </Button>
             </div>
         </div>
     );

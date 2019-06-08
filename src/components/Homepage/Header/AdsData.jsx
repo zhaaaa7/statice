@@ -41,12 +41,17 @@ const AdsData = (props) => {
     const { classes } = props;
     return (
         <div className={classes.adsData}>
-            <AdsDataItem data={'$100,000+'} des={'学员平均薪资'} />
-            <AdsDataItem data={'50+'} des={'顶级科技公司教师'} />
-            <AdsDataItem data={'100+'} des={'北美合作企业'} />
-            <AdsDataItem data={'1000+'} des={'企业直推Offer'} />
+            <AdsDataItem data={'10000'} money={true} des={'学员平均薪资'} />
+            <AdsDataItem data={'50'} des={'顶级科技公司教师'} />
+            <AdsDataItem data={'100'} des={'北美合作企业'} />
+            <AdsDataItem data={'1000'} des={'企业直推Offer'} />
         </div>
     );
 };
 
 export default withStyles(styles)(AdsData);
+
+// <AdsDataItem data={'$100,000+'} des={'学员平均薪资'} />
+//             <AdsDataItem data={'50+'} des={'顶级科技公司教师'} />
+//             <AdsDataItem data={'100+'} des={'北美合作企业'} />
+//             <AdsDataItem data={'1000+'} des={'企业直推Offer'} />

@@ -6,7 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
 const styles = {
     root: {
-        width: '70%',
+        width: '90%',
         margin: '0 auto',
     },
     content: {
@@ -16,9 +16,15 @@ const styles = {
         textAlign: 'left'
     },
     panel: {
-        boxShadow: '0px -1px 1px 0px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.2)',
+        // boxShadow: '0px -1px 1px 0px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.2)',
+        border: '1px solid #e6e6e6',
+        boxShadow: 'unset',
         backgroundColor: '#fff',
         marginBottom: '20px',
+        borderRadius: '0px !important',
+        '&::before': {
+            backgroundColor: 'transparent !important'
+        }
     },
     question: {
         fontSize: '15px',

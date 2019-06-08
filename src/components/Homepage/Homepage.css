@@ -23,12 +23,12 @@ h2 {
   }
   
 .studentComments-enter.studentComments-enter-active {
-  transform: matrix(1,0,0,1,0,0);
+  transform: translate3d(0,0,0);
   transition: transform 400ms ease-out;
 }
 
 .studentComments-leave {
-  transform: matrix(1,0,0,1,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .studentComments-leave.studentComments-leave-active {

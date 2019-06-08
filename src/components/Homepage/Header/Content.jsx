@@ -38,17 +38,18 @@ const styles = {
     input: {
         width: '190px',
         height: '35px',
+        fontSize: '14px',
         borderRadius: '2px',
         border: 'solid 1px #fff',
         backgroundColor: '#fff',
         marginRight: '10px',
         marginBottom: '10px',
-
+        textIndent: '10px',
         '&::placeholder': {
             opacity: '0.45',
             color: '#404040',
             fontSize: '14px',
-            paddingLeft: '6px'
+            textIndent: '10px',
         }
     },
     button: {

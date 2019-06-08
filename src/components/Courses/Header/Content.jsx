@@ -45,17 +45,26 @@ const styles = {
         backgroundColor: '#fff',
         fontSize: '14px',
         fontWeight: '500',
-        marginRight: '10px'
+        marginRight: '10px',
+        '&:hover': {
+            color: '#000',
+
+        }
     },
     button2: {
         width: '156px',
         height: '35px',
         border: '1px solid #fff',
         borderRadius: '2px',
-        backgroundColor: '#1f74d4',
+        backgroundColor: 'transparent',
         color: '#fff',
         fontSize: '14px',
-        fontWeight: '500'
+        fontWeight: '500',
+        '&:hover': {
+            color: '#000',
+            backgroundColor: '#fff',
+
+        }
     },
 };
 

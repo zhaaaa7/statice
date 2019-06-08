@@ -20,6 +20,11 @@ const styles = {
         backgroundColor: '#ffffff',
         margin: '0 20px',
         transform: 'translateY(-20px)',
+        transition: 'transform 0.2s linear',
+        '&:hover': {
+            transform: 'translateY(-70px)',
+
+        }
     },
     title: {
         textAlign: 'left',

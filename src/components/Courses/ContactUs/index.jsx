@@ -25,7 +25,7 @@ const ContactUs = (props) => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}
-            className="roots">
+            className="roots" id="course-contactUs">
             <div>
                 <section className={classes.root}>
                     <ContactForm />

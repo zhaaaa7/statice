@@ -20,7 +20,7 @@ const styles = {
         cursor: 'pointer',
         '& > li': {
             textAlign: 'left',
-            fontSize: '18px',
+            fontSize: '16px',
             color: 'rgba(64, 64, 64, 0.5)',
             transition: 'transform 0.2s ease-in',
             '&:hover': {

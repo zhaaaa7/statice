@@ -19,7 +19,7 @@ const CourseFeature = (props) => {
     return (
         <div style={{ backgroundColor: '#fff' }} className="roots">
             <div>
-                <h2 style={{ marginTop: '40px' }}>课程特色</h2>
+                <h2>课程特色</h2>
                 <section className={classes.root}>
                     <FeatureCard title={'FLAG资深面试官授课'}
                         des={`课程授课老师均为FLAG级别公司资深面试官，拥有丰富教学经验，且深刻理解面试要求，能够帮助学员事半功倍冲刺面试.`}
