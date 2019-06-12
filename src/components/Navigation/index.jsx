@@ -33,14 +33,14 @@ const NavBar = (props) => {
             nav.style.setProperty('--whiteFont', '#fff');
 
         } else {
-            nav.style.setProperty('--whiteFont', '#000');
+            nav.style.setProperty('--whiteFont', '#404040');
 
         }
 
         // console.log('???', nav.style);
     }, [windowScroll]);
     return (
-        <nav className={classes.root + ' ' + 'navRoot'} id="nav"
+        <nav className={classes.root} id="nav"
             style={windowScroll < 100 ? {
                 opacity: '1',
                 transform: 'translateY(0)',

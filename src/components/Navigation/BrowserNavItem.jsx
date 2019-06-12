@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { NavLink } from 'react-router-dom'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Button from '@material-ui/core/Button';
 
@@ -33,30 +32,25 @@ const styles = {
     },
     dropdown: {
         position: 'absolute',
-        left: '0',
-        transform: 'translate3d(-32%, 30px, 0px)',
+        left: '-60px',
+        top: '45px',
+        // transform: 'translate3d(-30%, 40px, 0px)',
         width: '200px',
-        willChange: 'transform',
         borderRadius: '3px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.26)',
         backgroundColor: '#fff',
-        padding: '5px 6px',
-        '& ul': {
-
-
-        },
+        padding: '12px 6px',
         '& li': {
-            padding: '12px 20px 12px 20px',
             borderRadius: '2px',
             transition: 'all 150ms linear',
             '& a': {
-                color: '#000',
+                display: 'inline-block',
+                padding: '12px 20px 12px 20px',
+                color: '#404040',
             },
-
             '&:hover': {
                 boxShadow: '0 12px 20px -10px rgba(0, 172, 193, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 172, 193, 0.2)',
                 backgroundColor: '#1f74d4',
-
                 '& a': {
                     color: '#fff',
                     fontSize: '13px'
@@ -71,18 +65,20 @@ const styles = {
 
 
 const BrowserNavItem = (props) => {
-    const { dropdownOpens, itemKey, setDropdownOpens, rootUrl, topLevel, secondLevel, classes } = props;
+    const { dropdownOpens, itemKey, openStatus, setDropdownOpens, rootUrl, secondLevel, classes } = props;
     const [showDropdown, toggleShowDropdown] = useState(false);
 
     // console.log('!!!', dropdownOpens);
 
     useEffect(() => {
-        toggleShowDropdown(dropdownOpens[itemKey]);
-    }, [dropdownOpens[itemKey]]);
+        toggleShowDropdown(openStatus);
+    }, [openStatus]);
 
     return (
-        <Button size="medium" style={{ color: "var(--whiteFont)" }}
-            className={classes.root}
+        <Button size="medium"
+
+            style={{ color: "var(--whiteFont)" }}
+            className={`${classes.root} topNavItem`}
             onClick={() => {
                 toggleShowDropdown(!showDropdown);
                 const opens = dropdownOpens.map((ele, index) => {
@@ -100,23 +96,44 @@ const BrowserNavItem = (props) => {
                         classes.arrow
                 } style={{ borderTopColor: "var(--whiteFont)" }}></b>
             </div>
-            <ReactCSSTransitionGroup
+
+            {/*
+                showDropdown && <div className={classes.dropdown} >
+                    <ReactCSSTransitionGroup
+                        transitionName="navDropdown"
+                        transitionEnterTimeout={200}
+                        transitionLeaveTimeout={200}>
+
+                        <ul>
+                            {
+                                secondLevel.map((ele, index) => {
+                                    return <li key={index}><a href={`./#${rootUrl}/course${index + 1}`}>{ele}</a></li>
+                                })
+                            }
+                        </ul>
+
+
+
+                    </ReactCSSTransitionGroup>
+                </div>
+                        */}
+            {<ReactCSSTransitionGroup
                 transitionName="navDropdown"
-                transitionEnterTimeout={200}
+                transitionEnterTimeout={300}
                 transitionLeaveTimeout={200}>
                 {
                     showDropdown && <div className={classes.dropdown} >
                         <ul>
                             {
                                 secondLevel.map((ele, index) => {
-                                    return <li key={index}><a href={`./#${rootUrl}`}>{ele}</a></li>
+                                    return <li key={index}><a href={`./#${rootUrl}/course${index + 1}`}>{ele}</a></li>
                                 })
                             }
                         </ul>
                     </div>
                 }
 
-            </ReactCSSTransitionGroup>
+            </ReactCSSTransitionGroup>}
         </Button>
     );
 };

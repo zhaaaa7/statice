@@ -31,7 +31,23 @@ const styles = {
     }
 };
 
-
+const data = [
+    {
+        title: '程序员算法面试课',
+        des: '资深FLAG级别面试官8周高强度集训，达到一线公司求职标准。',
+        decImg: './asset/homepage/course 1.png'
+    },
+    {
+        title: '程序员全栈开发实战课',
+        des: '顶级FLAG公司老师带你实战3大工业级项目，全面提升背景',
+        decImg: './asset/homepage/course 2.png'
+    },
+    {
+        title: '数据科学求职实战课',
+        des: '一站式解决数据方向求职问题，获取心仪Offer',
+        decImg: './asset/homepage/course 3.png'
+    },
+];
 
 const Courses = (props) => {
     const { classes } = props;
@@ -42,15 +58,17 @@ const Courses = (props) => {
         <div style={{ backgroundColor: '#f8fafc' }}>
             <h2 style={{ marginTop: '40px' }}>旗舰求职课程</h2>
             <section className={classes.root}>
-                <CourseCard title={'程序员算法面试课'}
-                    des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/homepage/course 1.png'} />
-                <CourseCard title={'程序员算法面试课'}
-                    des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/homepage/course 2.png'} />
-                <CourseCard title={'程序员算法面试课'}
-                    des={'FLAG公司资深面试官10周高强度集训，帮助你通过一线公司算法面试。'}
-                    decImg={'./asset/homepage/course 3.png'} />
+                {
+                    data.map((ele, index) => {
+                        return <CourseCard
+                            key={index}
+                            title={ele.title}
+                            cardIndex={index}
+                            des={ele.des}
+                            decImg={ele.decImg} />;
+                    })
+                }
+
             </section>
             <Button variant="contained" size="medium" color="primary" className={classes.button}
                 onClick={() => {

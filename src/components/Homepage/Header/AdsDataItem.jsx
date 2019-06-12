@@ -29,7 +29,7 @@ const Header = (props) => {
         }
 
         return () => { clearTimeout(timer) };
-    }, [num]);
+    }, [num, data, step]);
 
     return (
         <div className={classes.root}>

@@ -7,8 +7,7 @@ import MobileNav from './MobileNav';
 
 const styles = {
     root: {
-        width: '40%',
-        maxWidth: '400px',
+        width: '400px',
         height: '67px',
         position: 'relative'
     }

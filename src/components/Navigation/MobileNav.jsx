@@ -28,7 +28,7 @@ const styles = theme => ({
     },
     logo: {
         position: 'absolute',
-        top: '10px',
+        top: '40px',
         left: '50%',
         transform: 'translateX(-50%)'
     }
@@ -42,7 +42,7 @@ const MobileNav = (props) => {
     return (
         <div className={classes.root}>
             <IconButton aria-label="NavMenu" onClick={() => toggleShowNav(true)}>
-                <MenuIcon fontSize="large" />
+                <MenuIcon style={{ color: "var(--whiteFont)" }} fontSize="large" />
             </IconButton>
             <Drawer anchor="right" open={showNav} onClose={() => toggleShowNav(false)}>
                 <div
@@ -55,7 +55,7 @@ const MobileNav = (props) => {
                         <CloseIcon />
                     </IconButton>
                     <div className={classes.logo} >
-                        <Logo />
+                        <Logo mobile={true} />
                     </div>
                     <ul className={classes.nav}>
                         <NavLink to="/courses">旗舰课程</NavLink>
