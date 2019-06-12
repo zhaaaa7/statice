@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/flagdream/static/css/main.77ec0d01.chunk.css",
-    "main.js": "/flagdream/static/js/main.4135623c.chunk.js",
-    "main.js.map": "/flagdream/static/js/main.4135623c.chunk.js.map",
+    "main.js": "/flagdream/static/js/main.f8ec15eb.chunk.js",
+    "main.js.map": "/flagdream/static/js/main.f8ec15eb.chunk.js.map",
     "runtime~main.js": "/flagdream/static/js/runtime~main.08bff271.js",
     "runtime~main.js.map": "/flagdream/static/js/runtime~main.08bff271.js.map",
     "static/js/2.faec2066.chunk.js": "/flagdream/static/js/2.faec2066.chunk.js",
     "static/js/2.faec2066.chunk.js.map": "/flagdream/static/js/2.faec2066.chunk.js.map",
     "index.html": "/flagdream/index.html",
-    "precache-manifest.e509913ca7ea629921f4a0de87c3b8a9.js": "/flagdream/precache-manifest.e509913ca7ea629921f4a0de87c3b8a9.js",
+    "precache-manifest.93593a5b7d6c6289dd25207c9f282dbd.js": "/flagdream/precache-manifest.93593a5b7d6c6289dd25207c9f282dbd.js",
     "service-worker.js": "/flagdream/service-worker.js",
     "static/css/main.77ec0d01.chunk.css.map": "/flagdream/static/css/main.77ec0d01.chunk.css.map"
   }
