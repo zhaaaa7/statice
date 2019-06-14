@@ -77,8 +77,8 @@ const BrowserNav = (props) => {
                     topLevel={"免费资源"}
                     secondLevel={["最新活动", "技术博客"]} />
 
-                <Button size="medium"><a style={{ color: "var(--whiteFont)" }} href="/#/aboutus">关于我们</a></Button>
-                <Button size="medium"><a style={{ color: "var(--whiteFont)" }} href="/#/login">登陆</a></Button>
+                <Button size="medium"><a style={{ color: "var(--whiteFont)" }} href="./#/aboutus">关于我们</a></Button>
+                <Button size="medium"><a style={{ color: "var(--whiteFont)" }} href="./#/login">登陆</a></Button>
             </ul>
 
         </div>

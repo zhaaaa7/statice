@@ -8,7 +8,7 @@ const styles = {
     container: {
         zIndex: '10',
         position: 'absolute',
-        top: '460px',
+        top: '490px',
 
         right: '10vw',
     },
@@ -34,7 +34,7 @@ const styles = {
 
 const SideNav = (props) => {
     const { sideNavIndex, windowScroll, offsetTops, classes } = props;
-    const scrollToPosition = windowScroll > 345;
+    const scrollToPosition = windowScroll > 375;
 
     const firstLoad = <nav className={classes.container}>
         <div>

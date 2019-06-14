@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = {
     root: {
         width: '300px',
-        height: '302px',
+        height: '282px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
@@ -24,7 +24,7 @@ const styles = {
     },
     title: {
         textAlign: 'left',
-        padding: '0 20px',
+        padding: '10px 20px 0',
         fontWeight: '500',
         color: '#404040',
         letterSpacing: '1.1px'
@@ -50,7 +50,7 @@ const CourseCard = (props) => {
         <div className={classes.root}
             onMouseEnter={() => {
                 let cardDec = document.getElementById(`card-dec-${cardIndex}`);
-                cardDec.style.transform = 'translateY(-60px)';
+                cardDec.style.transform = 'translateY(-45px)';
             }}
             onMouseLeave={() => {
                 let cardDec = document.getElementById(`card-dec-${cardIndex}`);
@@ -62,7 +62,6 @@ const CourseCard = (props) => {
                     style={{ backgroundImage: `url('${props.decImg}')` }}></div>
                 <header className={classes.title}>{props.title}</header>
                 <p className={classes.description}>{props.des}</p>
-                <p className={classes.more}>了解更多...</p>
             </section>
         </div>
     );

@@ -27,10 +27,18 @@ const styles = {
         backgroundColor: '#f2f2f2'
     },
     decTop: {
+        width: '0%',
+        height: '4px',
+        borderRadius: '2px',
+        transition: 'width 100ms linear'
+
+    },
+    decTopSelected: {
         width: '75%',
         height: '4px',
         borderRadius: '2px',
-        backgroundColor: '#1f74d4'
+        backgroundColor: '#1f74d4',
+        transition: 'width 100ms linear'
     },
     '@media screen and (max-width: 690px)': {
         root: {
@@ -63,19 +71,15 @@ const SyllabusTab = (props) => {
             <section onClick={() => { changetab([true, false]) }}>
                 <h5 className={classes.title}>{'系统性算法训练与提升'}</h5>
                 <div className={classes.dec}>
-                    {
-                        tabStatus[0] && <div className={classes.decTop}></div>
+                    <div className={tabStatus[0] ? classes.decTopSelected : classes.decTop}></div>
 
-                    }
                 </div>
             </section>
             <section onClick={() => { changetab([false, true]) }}>
                 <h5 className={classes.title}>{'进阶算法训练和冲刺'}</h5>
                 <div className={classes.dec}>
-                    {
-                        tabStatus[1] && <div className={classes.decTop}></div>
+                    <div className={tabStatus[1] ? classes.decTopSelected : classes.decTop}></div>
 
-                    }
                 </div>
             </section>
         </div>

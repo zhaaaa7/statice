@@ -53,8 +53,6 @@ const styles = {
                 backgroundColor: '#1f74d4',
                 '& a': {
                     color: '#fff',
-                    fontSize: '13px'
-
                 }
             }
         }

@@ -9,7 +9,7 @@ const styles = {
         width: '90%',
         height: '142px',
         position: 'absolute',
-        top: '80%',
+        top: '85%',
         left: '5%',
         backgroundColor: '#fff',
         borderRadius: '5px',
