@@ -1,1 +1,0 @@
-{"version":3,"sources":["AboutUs.css"],"names":[],"mappings":"AAAA,gBACI,eAAgB,CAChB,4BACF,CAEF,wBACI,gBAAiB,CACjB,UAAW,CACX,aAEF","file":"4.59a7ffd5.chunk.css","sourcesContent":[".aboutus > footer{\n    margin-top: 60px;\n    border-top: 1px solid #ececec;\n  }\n\n.aboutus > footer > section{\n    max-width: 1024px;\n    width: 100%;\n    margin: 0 auto;\n\n  }"]}
