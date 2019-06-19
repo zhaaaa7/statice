@@ -72,6 +72,7 @@ const BrowserNavItem = (props) => {
         toggleShowDropdown(openStatus);
     }, [openStatus]);
 
+
     return (
         <Button size="medium"
 
@@ -88,7 +89,7 @@ const BrowserNavItem = (props) => {
             }}>
 
             <div className={classes.navItem}>{props.topLevel}
-                <b className={
+                <b id="testNav" className={
                     showDropdown ?
                         classes.arrow + ' ' + classes.down :
                         classes.arrow

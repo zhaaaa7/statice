@@ -1,5 +1,7 @@
 import React from 'react';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+
 import Dialog from '@material-ui/core/Dialog';
 import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
@@ -9,12 +11,18 @@ import CloseIcon from '@material-ui/icons/Close';
 
 const styles = {
     root: {
-        position: 'relative'
+        position: 'relative',
+    },
+    content: {
+        padding: '0px'
     },
     video: {
         position: 'relative',
         objectFit: 'fill',
-        width: '600px',
+        width: '800px',
+        '&:focus': {
+            outline: 'none'
+        }
     },
     closeButton: {
         position: 'absolute',
@@ -29,18 +37,20 @@ const VideoDialog = (props) => {
 
 
     return (
-        <Dialog onClose={() => { handleClose(false) }} open={open} aria-labelledby="simple-dialog-title">
+        <Dialog onClose={() => { handleClose(false) }} open={open} aria-labelledby="simple-dialog-title" maxWidth="lg">
             <section className={classes.root}>
                 <DialogTitle> 试看-程序员算法面试课程  </DialogTitle>
                 <IconButton className={classes.closeButton} aria-label="Close" onClick={() => { handleClose(false) }}>
                     <CloseIcon />
                 </IconButton>
-                <video src="./asset/homepage/30secsequence.mp4" autoPlay controls
-                    poster="./asset/homepage/30secsequence.png"
+                <DialogContent className={classes.content}>
+                    <video src="./asset/homepage/30secsequence.mp4" autoPlay controls
+                        poster="./asset/homepage/30secsequence.png"
 
-                    className={classes.video} >
+                        className={classes.video} >
 
-                </video>
+                    </video>
+                </DialogContent>
             </section>
         </Dialog>
     );

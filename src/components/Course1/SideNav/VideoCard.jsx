@@ -24,18 +24,20 @@ const styles = {
         borderRadius: '5px',
         backgroundColor: '#112337',
         cursor: 'pointer',
-        marginTop: '10px'
+        marginTop: '10px',
+        position: 'relative'
 
     },
     playButton: {
-        width: '45px',
-        height: '45px',
+        width: '50px',
+        height: '50px',
         borderRadius: '50%',
         border: '1px solid #e5e5e5',
         backgroundColor: '#d8d8d8',
-        position: 'relative',
-        top: '20%',
-        left: '35%',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%,-50%)',
         '&::after': {
             content: '""',
             width: '0px',
@@ -45,8 +47,7 @@ const styles = {
             borderLeft: '12px solid #112337',
             position: 'absolute',
             top: '35%',
-            left: '43%',
-            // transform: 'translate(-50%,-50%)'
+            left: '45%',
         }
     }
 };

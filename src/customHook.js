@@ -27,7 +27,6 @@ const getHTMLNodeList = () => {
     roots = roots.map(ele => {
         return ele.offsetTop;
     });
-
     return roots;
 };
 
