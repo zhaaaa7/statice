@@ -1,16 +1,39 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 
-const carousel = () => {
+const styles = {
+    root: {
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden'
+    },
+    video: {
+        position: 'relative',
+        zIndex: '-1',
+        objectFit: 'fill',
+        width: '100%',
+    },
+    '@media screen and (max-width: 1024px)': {
+        video: {
+            width: 'auto',
+            height: '100%'
+        },
+    },
+
+};
+const Carousel = (props) => {
+    const { classes } = props;
     return (
-        <div style={{
-            width: '100%',
-            height: '100%',
-            backgroundImage: `url('./asset/homepage/hp_bg.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center'
-        }}>
+
+        <div className={classes.root}>
+            <video src="./asset/homepage/30secsequence.mp4" autoPlay loop muted
+                poster="./asset/homepage/30secsequence.png"
+
+                className={classes.video}>
+
+            </video>
         </div>
     );
 };
 
-export default carousel;
+export default withStyles(styles)(Carousel);

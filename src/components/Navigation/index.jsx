@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from './Logo';
 import Nav from './Nav';
 import { withStyles } from '@material-ui/core/styles';
+import './Navigation.css';
 
 const styles = {
     root: {
@@ -9,14 +10,15 @@ const styles = {
         justifyContent: "space-between",
         alignItems: 'center',
         width: '100vw',
-        height: '70px',
-        opacity: 0,
+        height: '80px',
+        // opacity: 0,
         position: 'fixed',
         top: '0',
-        transform: 'translateY(-100%)',
-        transition: 'transform .3s cubic-bezier(.4,0,.6,1),opacity 0s .3s',
-        backgroundColor: '#fff',
-        zIndex: 10
+        // transform: 'translateY(-100%)',
+        transition: 'backgroundColor .3s cubic-bezier(.4,0,.6,1)',
+        backgroundColor: 'transparent',
+        zIndex: 10,
+
     }
 };
 
@@ -25,17 +27,32 @@ const styles = {
 const NavBar = (props) => {
     const { windowScroll, windowWidth, classes } = props;
 
+    useEffect(() => {
+        const nav = document.getElementById('nav');
+        if (windowScroll < 100) {
+            nav.style.setProperty('--whiteFont', '#fff');
+
+        } else {
+            nav.style.setProperty('--whiteFont', '#404040');
+
+        }
+
+        // console.log('???', nav.style);
+    }, [windowScroll]);
     return (
-        <nav className={classes.root}
-            style={windowScroll < 250 ? {
+        <nav className={classes.root} id="nav"
+            style={windowScroll < 100 ? {
                 opacity: '1',
                 transform: 'translateY(0)',
-                transition: 'transform .3s cubic-bezier(.4,0,.2,1) .3s,opacity 0s .3s',
-                padding: '50px 0 40px'
+                transition: 'backgroundColor.3s cubic-bezier(.4,0,.2,1) .3s',
             } : {
-                    padding: '50px 0 40px'
+                    padding: '30px 0',
+                    backgroundColor: '#fff',
+                    boxShadow: '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)'
+
+
                 }}>
-            <Logo />
+            <Logo windowScroll={windowScroll} />
             <Nav windowWidth={windowWidth} />
         </nav>
     );

@@ -5,9 +5,7 @@ import LogoBox from './LogoBox';
 
 
 const styles = {
-    root: {
 
-    },
     logoGroup: {
         maxWidth: '920px',
         display: 'flex',

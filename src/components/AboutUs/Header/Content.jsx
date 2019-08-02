@@ -8,11 +8,16 @@ const styles = {
         width: '60%',
         alignItems: "center",
         position: 'absolute',
-        top: '50%',
+        top: '60%',
         left: '50%',
         transform: 'translate(-50%,-50%)',
         '& > *': {
             marginBottom: '30px'
+        }
+    },
+    '@media screen and (max-width: 700px)': {
+        root: {
+            width: '80%',
         }
     },
     text1: {

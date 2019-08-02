@@ -5,13 +5,17 @@ import { withStyles } from '@material-ui/core/styles';
 
 
 const styles = {
+    container: {
+        padding: '0',
+        width: '100%',
+        backgroundImage: `url('./asset/homepage/contact_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+    },
     root: {
         maxWidth: '1500px',
         display: 'flex',
         justifyContent: 'space-around',
-        backgroundImage: `url('./asset/homepage/contact_bg.png')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
         margin: '0 auto',
         padding: '80px 5%'
     },
@@ -19,16 +23,13 @@ const styles = {
         root: {
             flexDirection: 'column',
             alignItems: 'center',
-
         }
     }
 };
 const ContactUs = (props) => {
     const { classes } = props;
     return (
-        <div style={{
-            padding: '0',
-        }}>
+        <div className={classes.container} id="hp-contactUs">
             <div className={classes.root}>
                 <ContactForm />
                 <ContactInfo />

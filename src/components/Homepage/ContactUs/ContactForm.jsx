@@ -6,18 +6,17 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = {
     root: {
         position: 'relative',
-        width: '400px',
+        width: '90%',
+        maxWidth: '400px',
         height: '452px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
         margin: '20px 20px 20px 0',
-        maxWidth: '600px'
     },
-    '@media screen and (max-width: 500px)': {
+    '@media screen and (max-width: 700px)': {
         root: {
-            width: '300px',
-
+            margin: '20px 0',
         }
     },
     header: {

@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = {
     root: {
         width: '300px',
-        height: '302px',
+        height: '282px',
         borderRadius: '5px',
         boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.28)',
         backgroundColor: '#fff',
@@ -20,10 +20,11 @@ const styles = {
         backgroundColor: '#ffffff',
         margin: '0 20px',
         transform: 'translateY(-20px)',
+        transition: 'transform 0.3s cubic-bezier(0.34, 1.61, 0.7, 1)',
     },
     title: {
         textAlign: 'left',
-        padding: '0 20px',
+        padding: '10px 20px 0',
         fontWeight: '500',
         color: '#404040',
         letterSpacing: '1.1px'
@@ -44,14 +45,23 @@ const styles = {
     }
 };
 const CourseCard = (props) => {
-    const { classes } = props;
+    const { cardIndex, classes } = props;
     return (
-        <div className={classes.root}>
+        <div className={classes.root}
+            onMouseEnter={() => {
+                let cardDec = document.getElementById(`card-dec-${cardIndex}`);
+                cardDec.style.transform = 'translateY(-45px)';
+            }}
+            onMouseLeave={() => {
+                let cardDec = document.getElementById(`card-dec-${cardIndex}`);
+                cardDec.style.transform = 'translateY(-20px)';
+            }}
+        >
             <section>
-                <div className={classes.decoration} style={{ backgroundImage: `url('${props.decImg}')` }}></div>
+                <div className={classes.decoration} id={`card-dec-${cardIndex}`}
+                    style={{ backgroundImage: `url('${props.decImg}')` }}></div>
                 <header className={classes.title}>{props.title}</header>
                 <p className={classes.description}>{props.des}</p>
-                <p className={classes.more}>了解更多...</p>
             </section>
         </div>
     );

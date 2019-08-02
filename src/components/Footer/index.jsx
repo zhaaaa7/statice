@@ -10,11 +10,10 @@ const styles = {
         justifyContent: 'space-around',
         padding: '20px',
     },
-    '@media screen and (max-width: 450px)': {
+    '@media screen and (max-width: 500px)': {
         root: {
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginLeft: '0px !important'
+            padding: '20px 10px',
+
         }
     }
 };
